@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Guidebot\Guidebot.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Guidebot\Guidebot.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Wed Jun 12 16:03:50 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Thu Jun 13 10:55:17 2019
 <BR><P>
 <H3>Maximum Stack Usage =        184 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -179,7 +179,7 @@ Global Symbols
 <P><STRONG><a name="[61]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(.text)
 </UL>
-<P><STRONG><a name="[151]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[154]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[9a]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -189,7 +189,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[152]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[155]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
 <P><STRONG><a name="[9c]"></a>_main_cpp_init$empty</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8a.o(.ARM.Collect$$$$00000009))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
@@ -198,11 +198,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cpp_initialize__aeabi_
 </UL>
 
-<P><STRONG><a name="[153]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[156]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[154]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[157]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[155]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[158]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
 <P><STRONG><a name="[9d]"></a>__rt_final_cpp$nonempty</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10b.o(.ARM.Collect$$$$0000000E))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36 + Unknown Stack Size
@@ -211,7 +211,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
 </UL>
 
-<P><STRONG><a name="[156]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[159]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[4]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f407xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
@@ -452,53 +452,53 @@ Global Symbols
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[13c]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<P><STRONG><a name="[13f]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::publish(int, const ros::Msg*)
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::TopicInfo::serialize(unsigned char*) const
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::Log::serialize(unsigned char*) const
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;internal_alloc
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;internal_alloc
 </UL>
 
-<P><STRONG><a name="[157]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[15a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[158]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[15b]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[a3]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[159]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[15c]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[15a]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[15d]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[a2]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
 <P><STRONG><a name="[d3]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
+<BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_MspInit
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::begin(unsigned char)
 </UL>
 
-<P><STRONG><a name="[15b]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[15e]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[a4]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[13b]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<P><STRONG><a name="[13e]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::TopicInfo::serialize(unsigned char*) const
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::Log::serialize(unsigned char*) const
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const
@@ -527,7 +527,7 @@ Global Symbols
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 </UL>
@@ -537,7 +537,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
 </UL>
 
 <P><STRONG><a name="[ad]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
@@ -549,10 +549,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
 </UL>
 
 <P><STRONG><a name="[af]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
@@ -560,8 +560,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
 </UL>
 
 <P><STRONG><a name="[b0]"></a>__aeabi_i2d</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, dflti.o(.text))
@@ -569,10 +569,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
 </UL>
 
 <P><STRONG><a name="[b1]"></a>__aeabi_ui2d</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, dfltui.o(.text))
@@ -580,7 +580,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
 </UL>
 
 <P><STRONG><a name="[b2]"></a>__aeabi_d2iz</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, dfixi.o(.text))
@@ -588,26 +588,26 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
-<P><STRONG><a name="[10e]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
+<P><STRONG><a name="[111]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;command_callback(const geometry_msgs::Twist&)
 </UL>
 
-<P><STRONG><a name="[11e]"></a>__aeabi_cdcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cdcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<P><STRONG><a name="[121]"></a>__aeabi_cdcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cdcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
 </UL>
 
-<P><STRONG><a name="[120]"></a>__aeabi_cdcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<P><STRONG><a name="[123]"></a>__aeabi_cdcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
 </UL>
 
-<P><STRONG><a name="[11f]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<P><STRONG><a name="[122]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
 </UL>
 
 <P><STRONG><a name="[b3]"></a>__aeabi_d2f</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, d2f.o(.text))
@@ -615,11 +615,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
 <P><STRONG><a name="[a1]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
@@ -628,7 +628,7 @@ Global Symbols
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
-<P><STRONG><a name="[15c]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[15f]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[a0]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
@@ -636,15 +636,15 @@ Global Symbols
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
-<P><STRONG><a name="[15d]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[160]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[a9]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[15e]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<P><STRONG><a name="[161]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
 
-<P><STRONG><a name="[15f]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[162]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[a7]"></a>__rt_ddtor_pointer_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpp_dtor.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
@@ -664,7 +664,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 
-<P><STRONG><a name="[160]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text), UNUSED)
+<P><STRONG><a name="[163]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text), UNUSED)
 
 <P><STRONG><a name="[ab]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
@@ -693,9 +693,9 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[161]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[164]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[162]"></a>__rt_lib_shutdown_cpp_2</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, cpp_final.o(.text), UNUSED)
+<P><STRONG><a name="[165]"></a>__rt_lib_shutdown_cpp_2</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, cpp_final.o(.text), UNUSED)
 
 <P><STRONG><a name="[8]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.BusFault_Handler))
 <BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
@@ -721,17 +721,17 @@ Global Symbols
 <P><STRONG><a name="[b]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[ef]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
-<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
+<P><STRONG><a name="[f2]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
 </UL>
 
-<P><STRONG><a name="[e8]"></a>HAL_DMA_Abort_IT</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, stm32f4xx_hal_dma.o(i.HAL_DMA_Abort_IT))
-<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<P><STRONG><a name="[eb]"></a>HAL_DMA_Abort_IT</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, stm32f4xx_hal_dma.o(i.HAL_DMA_Abort_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 </UL>
 
 <P><STRONG><a name="[b7]"></a>HAL_DMA_IRQHandler</STRONG> (Thumb, 412 bytes, Stack size 32 bytes, stm32f4xx_hal_dma.o(i.HAL_DMA_IRQHandler))
@@ -748,7 +748,7 @@ Global Symbols
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_CalcBaseAndBitshift
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 </UL>
 
 <P><STRONG><a name="[bc]"></a>HAL_DMA_Start_IT</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT))
@@ -756,29 +756,29 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit_DMA
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit_DMA
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
 </UL>
 
 <P><STRONG><a name="[d4]"></a>HAL_GPIO_Init</STRONG> (Thumb, 388 bytes, Stack size 40 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_MspInit
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::begin(unsigned char)
 </UL>
 
-<P><STRONG><a name="[138]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
-<BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::sda_read()
+<P><STRONG><a name="[13b]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
+<BR><BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::sda_read()
 </UL>
 
-<P><STRONG><a name="[12d]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::spin(int)
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<P><STRONG><a name="[130]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
+<BR><BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::spin(int)
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 
 <P><STRONG><a name="[b9]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_GetTick))
@@ -787,7 +787,7 @@ Global Symbols
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 </UL>
 
-<P><STRONG><a name="[fc]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_IncTick))
+<P><STRONG><a name="[ff]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_IncTick))
 <BR><BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
@@ -818,10 +818,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[cb]"></a>HAL_NVIC_EnableIRQ</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_MspInit
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
 </UL>
 
 <P><STRONG><a name="[c3]"></a>HAL_NVIC_SetPriority</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriority))
@@ -829,10 +829,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_MspInit
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 
@@ -847,15 +847,15 @@ Global Symbols
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[102]"></a>HAL_RCC_GetPCLK1Freq</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq))
-<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<P><STRONG><a name="[105]"></a>HAL_RCC_GetPCLK1Freq</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
 </UL>
 
-<P><STRONG><a name="[101]"></a>HAL_RCC_GetPCLK2Freq</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq))
-<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<P><STRONG><a name="[104]"></a>HAL_RCC_GetPCLK2Freq</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
 </UL>
 
 <P><STRONG><a name="[c6]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, stm32f4xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq))
@@ -871,7 +871,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
 <P><STRONG><a name="[c2]"></a>HAL_SYSTICK_Config</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_Config))
@@ -882,21 +882,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 
-<P><STRONG><a name="[da]"></a>HAL_TIMEx_BreakCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_BreakCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[dc]"></a>HAL_TIMEx_BreakCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_BreakCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 
-<P><STRONG><a name="[dc]"></a>HAL_TIMEx_CommutCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_CommutCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[de]"></a>HAL_TIMEx_CommutCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_CommutCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 
-<P><STRONG><a name="[f7]"></a>HAL_TIMEx_MasterConfigSynchronization</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_MasterConfigSynchronization))
+<P><STRONG><a name="[fa]"></a>HAL_TIMEx_MasterConfigSynchronization</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_MasterConfigSynchronization))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIMEx_MasterConfigSynchronization
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
 </UL>
 
 <P><STRONG><a name="[c8]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Init))
@@ -905,8 +905,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
 </UL>
 
 <P><STRONG><a name="[c9]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, tim.o(i.HAL_TIM_Base_MspInit))
@@ -918,8 +918,9 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
 
-<P><STRONG><a name="[14b]"></a>HAL_TIM_Base_Start</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start))
-<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<P><STRONG><a name="[14c]"></a>HAL_TIM_Base_Start</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
 </UL>
 
 <P><STRONG><a name="[cc]"></a>HAL_TIM_ConfigClockSource</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource))
@@ -930,8 +931,8 @@ Global Symbols
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITRx_SetConfig
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
 </UL>
 
 <P><STRONG><a name="[d1]"></a>HAL_TIM_Encoder_Init</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Init))
@@ -940,8 +941,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_MspInit
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
 </UL>
 
 <P><STRONG><a name="[d2]"></a>HAL_TIM_Encoder_MspInit</STRONG> (Thumb, 176 bytes, Stack size 40 bytes, tim.o(i.HAL_TIM_Encoder_MspInit))
@@ -955,155 +956,171 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Init
 </UL>
 
-<P><STRONG><a name="[d6]"></a>HAL_TIM_IC_CaptureCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[d5]"></a>HAL_TIM_Encoder_Start</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_Encoder_Start &rArr; TIM_CCxChannelCmd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_CCxChannelCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d5]"></a>HAL_TIM_IRQHandler</STRONG> (Thumb, 358 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler))
+<P><STRONG><a name="[d8]"></a>HAL_TIM_IC_CaptureCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[d7]"></a>HAL_TIM_IRQHandler</STRONG> (Thumb, 358 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_PulseFinishedCallback
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_OC_DelayElapsedCallback
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IC_CaptureCallback
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_CommutCallback
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_BreakCallback
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_PulseFinishedCallback
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_OC_DelayElapsedCallback
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IC_CaptureCallback
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_CommutCallback
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_BreakCallback
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
 <LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
 <LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[dd]"></a>HAL_TIM_MspPostInit</STRONG> (Thumb, 68 bytes, Stack size 32 bytes, tim.o(i.HAL_TIM_MspPostInit))
+<P><STRONG><a name="[df]"></a>HAL_TIM_MspPostInit</STRONG> (Thumb, 68 bytes, Stack size 32 bytes, tim.o(i.HAL_TIM_MspPostInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = HAL_TIM_MspPostInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
-<P><STRONG><a name="[d7]"></a>HAL_TIM_OC_DelayElapsedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[d9]"></a>HAL_TIM_OC_DelayElapsedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 
-<P><STRONG><a name="[de]"></a>HAL_TIM_PWM_ConfigChannel</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel))
+<P><STRONG><a name="[e0]"></a>HAL_TIM_PWM_ConfigChannel</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_TIM_PWM_ConfigChannel &rArr; TIM_OC3_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC4_SetConfig
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC3_SetConfig
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC1_SetConfig
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2_SetConfig
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC4_SetConfig
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC3_SetConfig
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC1_SetConfig
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
-<P><STRONG><a name="[e3]"></a>HAL_TIM_PWM_Init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Init))
+<P><STRONG><a name="[e5]"></a>HAL_TIM_PWM_Init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = HAL_TIM_PWM_Init &rArr; TIM_Base_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_MspInit
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_MspInit
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
-<P><STRONG><a name="[e4]"></a>HAL_TIM_PWM_MspInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_MspInit))
-<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
+<P><STRONG><a name="[e6]"></a>HAL_TIM_PWM_MspInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_MspInit))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
 </UL>
 
-<P><STRONG><a name="[d8]"></a>HAL_TIM_PWM_PulseFinishedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[da]"></a>HAL_TIM_PWM_PulseFinishedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 
-<P><STRONG><a name="[d9]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PeriodElapsedCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[e7]"></a>HAL_TIM_PWM_Start</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_PWM_Start &rArr; TIM_CCxChannelCmd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_CCxChannelCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[db]"></a>HAL_TIM_TriggerCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_TriggerCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<P><STRONG><a name="[db]"></a>HAL_TIM_PeriodElapsedCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_PeriodElapsedCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 
-<P><STRONG><a name="[e9]"></a>HAL_UART_ErrorCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_ErrorCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<P><STRONG><a name="[dd]"></a>HAL_TIM_TriggerCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_TriggerCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ec]"></a>HAL_UART_ErrorCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_ErrorCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMAError
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMAAbortOnError
 </UL>
 
-<P><STRONG><a name="[e5]"></a>HAL_UART_IRQHandler</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_IRQHandler))
+<P><STRONG><a name="[e8]"></a>HAL_UART_IRQHandler</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = HAL_UART_IRQHandler &rArr; HAL_UART_TxCpltCallback &rArr; STM32Hardware::flush() &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
-<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Transmit_IT
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Receive_IT
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort_IT
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Transmit_IT
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Receive_IT
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort_IT
 </UL>
 <BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[ec]"></a>HAL_UART_Init</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Init))
+<P><STRONG><a name="[ef]"></a>HAL_UART_Init</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
 </UL>
 
-<P><STRONG><a name="[ed]"></a>HAL_UART_MspInit</STRONG> (Thumb, 218 bytes, Stack size 48 bytes, usart.o(i.HAL_UART_MspInit))
+<P><STRONG><a name="[f0]"></a>HAL_UART_MspInit</STRONG> (Thumb, 218 bytes, Stack size 48 bytes, usart.o(i.HAL_UART_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
 
-<P><STRONG><a name="[f0]"></a>HAL_UART_Receive_DMA</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA))
+<P><STRONG><a name="[f3]"></a>HAL_UART_Receive_DMA</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Start_IT
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::reset_rbuf()
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::reset_rbuf()
 </UL>
 
-<P><STRONG><a name="[f1]"></a>HAL_UART_RxCpltCallback</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mainpp.o(i.HAL_UART_RxCpltCallback))
+<P><STRONG><a name="[f4]"></a>HAL_UART_RxCpltCallback</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mainpp.o(i.HAL_UART_RxCpltCallback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = HAL_UART_RxCpltCallback &rArr; STM32Hardware::reset_rbuf() &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::reset_rbuf()
+<BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::reset_rbuf()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Receive_IT
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Receive_IT
 <LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMAReceiveCplt
 </UL>
 
-<P><STRONG><a name="[ff]"></a>HAL_UART_RxHalfCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_RxHalfCpltCallback))
+<P><STRONG><a name="[102]"></a>HAL_UART_RxHalfCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_RxHalfCpltCallback))
 <BR><BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMARxHalfCplt
 </UL>
 
-<P><STRONG><a name="[f3]"></a>HAL_UART_Transmit_DMA</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Transmit_DMA))
+<P><STRONG><a name="[f6]"></a>HAL_UART_Transmit_DMA</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Transmit_DMA))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Start_IT
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::flush()
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::flush()
 </UL>
 
-<P><STRONG><a name="[eb]"></a>HAL_UART_TxCpltCallback</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mainpp.o(i.HAL_UART_TxCpltCallback))
+<P><STRONG><a name="[ee]"></a>HAL_UART_TxCpltCallback</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mainpp.o(i.HAL_UART_TxCpltCallback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = HAL_UART_TxCpltCallback &rArr; STM32Hardware::flush() &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::flush()
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::flush()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMATransmitCplt
 </UL>
 
-<P><STRONG><a name="[100]"></a>HAL_UART_TxHalfCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_TxHalfCpltCallback))
+<P><STRONG><a name="[103]"></a>HAL_UART_TxHalfCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_TxHalfCpltCallback))
 <BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMATxHalfCplt
 </UL>
 
@@ -1114,7 +1131,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[f5]"></a>MX_DMA_Init</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, dma.o(i.MX_DMA_Init))
+<P><STRONG><a name="[f8]"></a>MX_DMA_Init</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, dma.o(i.MX_DMA_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = MX_DMA_Init &rArr; HAL_NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
@@ -1123,65 +1140,65 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[148]"></a>MX_GPIO_Init</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, gpio.o(i.MX_GPIO_Init))
+<P><STRONG><a name="[14b]"></a>MX_GPIO_Init</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, gpio.o(i.MX_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MX_GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f6]"></a>MX_TIM2_Init</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, tim.o(i.MX_TIM2_Init))
+<P><STRONG><a name="[f9]"></a>MX_TIM2_Init</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, tim.o(i.MX_TIM2_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = MX_TIM2_Init &rArr; HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f8]"></a>MX_TIM3_Init</STRONG> (Thumb, 164 bytes, Stack size 64 bytes, tim.o(i.MX_TIM3_Init))
+<P><STRONG><a name="[fb]"></a>MX_TIM3_Init</STRONG> (Thumb, 164 bytes, Stack size 64 bytes, tim.o(i.MX_TIM3_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = MX_TIM3_Init &rArr; HAL_TIM_MspPostInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_MspPostInit
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f9]"></a>MX_TIM4_Init</STRONG> (Thumb, 98 bytes, Stack size 56 bytes, tim.o(i.MX_TIM4_Init))
+<P><STRONG><a name="[fc]"></a>MX_TIM4_Init</STRONG> (Thumb, 98 bytes, Stack size 56 bytes, tim.o(i.MX_TIM4_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = MX_TIM4_Init &rArr; HAL_TIM_Encoder_Init &rArr; HAL_TIM_Encoder_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Init
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[fa]"></a>MX_TIM5_Init</STRONG> (Thumb, 96 bytes, Stack size 56 bytes, tim.o(i.MX_TIM5_Init))
+<P><STRONG><a name="[fd]"></a>MX_TIM5_Init</STRONG> (Thumb, 96 bytes, Stack size 56 bytes, tim.o(i.MX_TIM5_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = MX_TIM5_Init &rArr; HAL_TIM_Encoder_Init &rArr; HAL_TIM_Encoder_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Init
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[fb]"></a>MX_USART1_UART_Init</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, usart.o(i.MX_USART1_UART_Init))
+<P><STRONG><a name="[fe]"></a>MX_USART1_UART_Init</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, usart.o(i.MX_USART1_UART_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = MX_USART1_UART_Init &rArr; HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1203,11 +1220,11 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[d]"></a>SysTick_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.SysTick_Handler))
-<BR><BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
+<BR><BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[fd]"></a>SystemClock_Config</STRONG> (Thumb, 126 bytes, Stack size 88 bytes, main.o(i.SystemClock_Config))
+<P><STRONG><a name="[100]"></a>SystemClock_Config</STRONG> (Thumb, 126 bytes, Stack size 88 bytes, main.o(i.SystemClock_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = SystemClock_Config &rArr; HAL_RCC_ClockConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uldivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
@@ -1223,30 +1240,37 @@ Global Symbols
 <P><STRONG><a name="[2b]"></a>TIM3_IRQHandler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.TIM3_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIM3_IRQHandler &rArr; HAL_TIM_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[2c]"></a>TIM4_IRQHandler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.TIM4_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIM4_IRQHandler &rArr; HAL_TIM_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[40]"></a>TIM5_IRQHandler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.TIM5_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIM5_IRQHandler &rArr; HAL_TIM_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[ca]"></a>TIM_Base_SetConfig</STRONG> (Thumb, 156 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Init
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Init
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+</UL>
+
+<P><STRONG><a name="[d6]"></a>TIM_CCxChannelCmd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM_CCxChannelCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Start
 </UL>
 
 <P><STRONG><a name="[cd]"></a>TIM_ETR_SetConfig</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.TIM_ETR_SetConfig))
@@ -1255,16 +1279,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 </UL>
 
-<P><STRONG><a name="[e0]"></a>TIM_OC2_SetConfig</STRONG> (Thumb, 98 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_OC2_SetConfig))
+<P><STRONG><a name="[e2]"></a>TIM_OC2_SetConfig</STRONG> (Thumb, 98 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_OC2_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_OC2_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
 </UL>
 
 <P><STRONG><a name="[33]"></a>USART1_IRQHandler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.USART1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = USART1_IRQHandler &rArr; HAL_UART_IRQHandler &rArr; HAL_UART_TxCpltCallback &rArr; STM32Hardware::flush() &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
@@ -1275,126 +1299,126 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[103]"></a>print_debug()</STRONG> (Thumb, 66 bytes, Stack size 56 bytes, mainpp.o(i._Z11print_debugv))
+<P><STRONG><a name="[106]"></a>print_debug()</STRONG> (Thumb, 66 bytes, Stack size 56 bytes, mainpp.o(i._Z11print_debugv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = print_debug() &rArr; __2sprintf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::read()
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::read()
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 
-<P><STRONG><a name="[107]"></a>publish_imu()</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, mainpp.o(i._Z11publish_imuv))
+<P><STRONG><a name="[10a]"></a>publish_imu()</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, mainpp.o(i._Z11publish_imuv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = publish_imu() &rArr; Gy85::measure_magnetometer() &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::Publisher::publish(const ros::Msg*)
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;geometry_msgs::Vector3::operator =(const geometry_msgs::Vector3&)
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::Publisher::publish(const ros::Msg*)
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;geometry_msgs::Vector3::operator =(const geometry_msgs::Vector3&)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 
 <P><STRONG><a name="[6b]"></a>pid_callback(const riki_msgs::PID&)</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, mainpp.o(i._Z12pid_callbackRKN9riki_msgs3PIDE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pid_callback(const riki_msgs::PID&)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::updateConstants(float, float, float)
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::updateConstants(float, float, float)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
 </UL>
 <P><STRONG><a name="[6a]"></a>command_callback(const geometry_msgs::Twist&)</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, mainpp.o(i._Z16command_callbackRKN13geometry_msgs5TwistE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = command_callback(const geometry_msgs::Twist&)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
 </UL>
-<P><STRONG><a name="[110]"></a>check_imu()</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, mainpp.o(i._Z9check_imuv))
+<P><STRONG><a name="[113]"></a>check_imu()</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, mainpp.o(i._Z9check_imuv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = check_imu() &rArr; Gy85::check_accelerometer() &rArr; Gy85::check_id(int, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_accelerometer()
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_magnetometer()
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_gyroscope()
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_accelerometer()
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_magnetometer()
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_gyroscope()
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 
-<P><STRONG><a name="[115]"></a>move_base()</STRONG> (Thumb, 206 bytes, Stack size 40 bytes, mainpp.o(i._Z9move_basev))
+<P><STRONG><a name="[118]"></a>move_base()</STRONG> (Thumb, 206 bytes, Stack size 40 bytes, mainpp.o(i._Z9move_basev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = move_base() &rArr; PID::compute(float, float) &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::spin(int)
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
-<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::getRPM(float, float, float)
-<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::getVelocities(int, int)
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::Publisher::publish(const ros::Msg*)
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::spin(int)
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float)
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::getRPM(float, float, float)
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::getVelocities(int, int)
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::Publisher::publish(const ros::Msg*)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
-</UL>
-
-<P><STRONG><a name="[147]"></a>stop_base()</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, mainpp.o(i._Z9stop_basev))
-<BR><BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 
-<P><STRONG><a name="[11b]"></a>Kinematics::calculateRPM(float, float, float)</STRONG> (Thumb, 190 bytes, Stack size 16 bytes, kinematics.o(i._ZN10Kinematics12calculateRPMEfff))
+<P><STRONG><a name="[14a]"></a>stop_base()</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, mainpp.o(i._Z9stop_basev))
+<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+</UL>
+
+<P><STRONG><a name="[11e]"></a>Kinematics::calculateRPM(float, float, float)</STRONG> (Thumb, 190 bytes, Stack size 16 bytes, kinematics.o(i._ZN10Kinematics12calculateRPMEfff))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Kinematics::calculateRPM(float, float, float)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::getRPM(float, float, float)
+<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::getRPM(float, float, float)
 </UL>
 
-<P><STRONG><a name="[11a]"></a>Kinematics::getVelocities(int, int)</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, kinematics.o(i._ZN10Kinematics13getVelocitiesEii))
-<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<P><STRONG><a name="[11d]"></a>Kinematics::getVelocities(int, int)</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, kinematics.o(i._ZN10Kinematics13getVelocitiesEii))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
-<P><STRONG><a name="[116]"></a>Kinematics::getRPM(float, float, float)</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, kinematics.o(i._ZN10Kinematics6getRPMEfff))
+<P><STRONG><a name="[119]"></a>Kinematics::getRPM(float, float, float)</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, kinematics.o(i._ZN10Kinematics6getRPMEfff))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Kinematics::getRPM(float, float, float) &rArr; Kinematics::calculateRPM(float, float, float)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::calculateRPM(float, float, float)
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::calculateRPM(float, float, float)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
-<P><STRONG><a name="[11c]"></a>Kinematics::Kinematics(int, float, float, float)</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, kinematics.o(i._ZN10KinematicsC1Eifff))
+<P><STRONG><a name="[11f]"></a>Kinematics::Kinematics(int, float, float, float)</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, kinematics.o(i._ZN10KinematicsC1Eifff))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = Kinematics::Kinematics(int, float, float, float) &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[163]"></a>Kinematics::Kinematics__sub_object(int, float, float, float)</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, kinematics.o(i._ZN10KinematicsC1Eifff), UNUSED)
+<P><STRONG><a name="[166]"></a>Kinematics::Kinematics__sub_object(int, float, float, float)</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, kinematics.o(i._ZN10KinematicsC1Eifff), UNUSED)
 
-<P><STRONG><a name="[f2]"></a>STM32Hardware::reset_rbuf()</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, mainpp.o(i._ZN13STM32Hardware10reset_rbufEv))
+<P><STRONG><a name="[f5]"></a>STM32Hardware::reset_rbuf()</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, mainpp.o(i._ZN13STM32Hardware10reset_rbufEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = STM32Hardware::reset_rbuf() &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
 </UL>
 
-<P><STRONG><a name="[10f]"></a>STM32Hardware::time()</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mainpp.o(i._ZN13STM32Hardware4timeEv))
+<P><STRONG><a name="[112]"></a>STM32Hardware::time()</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mainpp.o(i._ZN13STM32Hardware4timeEv))
 <BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;command_callback(const geometry_msgs::Twist&)
 </UL>
 
-<P><STRONG><a name="[f4]"></a>STM32Hardware::flush()</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, mainpp.o(i._ZN13STM32Hardware5flushEv))
+<P><STRONG><a name="[f7]"></a>STM32Hardware::flush()</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, mainpp.o(i._ZN13STM32Hardware5flushEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = STM32Hardware::flush() &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit_DMA
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit_DMA
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::publish(int, const ros::Msg*)
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
 </UL>
 
 <P><STRONG><a name="[6f]"></a>geometry_msgs::Twist::deserialize(unsigned char*)</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mainpp.o(i._ZN13geometry_msgs5Twist11deserializeEPh))
@@ -1425,20 +1449,20 @@ Global Symbols
 <P><STRONG><a name="[74]"></a>geometry_msgs::Vector3::getType()</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector37getTypeEv))
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN13geometry_msgs7Vector3E)
 </UL>
-<P><STRONG><a name="[143]"></a>geometry_msgs::Vector3::Vector3()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector3C1Ev))
+<P><STRONG><a name="[146]"></a>geometry_msgs::Vector3::Vector3()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector3C1Ev))
 <BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[164]"></a>geometry_msgs::Vector3::Vector3__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector3C1Ev), UNUSED)
+<P><STRONG><a name="[167]"></a>geometry_msgs::Vector3::Vector3__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector3C1Ev), UNUSED)
 
-<P><STRONG><a name="[10a]"></a>geometry_msgs::Vector3::operator =(const geometry_msgs::Vector3&)</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector3aSERKS0_))
-<BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
+<P><STRONG><a name="[10d]"></a>geometry_msgs::Vector3::operator =(const geometry_msgs::Vector3&)</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, mainpp.o(i._ZN13geometry_msgs7Vector3aSERKS0_))
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
 </UL>
 
 <P><STRONG><a name="[77]"></a>rosserial_msgs::RequestParamResponse::deserialize(unsigned char*)</STRONG> (Thumb, 238 bytes, Stack size 24 bytes, mainpp.o(i._ZN14rosserial_msgs20RequestParamResponse11deserializeEPh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = rosserial_msgs::RequestParamResponse::deserialize(unsigned char*) &rArr; realloc &rArr; malloc &rArr; internal_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
 </UL>
@@ -1462,261 +1486,261 @@ Global Symbols
 <P><STRONG><a name="[7e]"></a>rosserial_msgs::TopicInfo::getType()</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mainpp.o(i._ZN14rosserial_msgs9TopicInfo7getTypeEv))
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN14rosserial_msgs9TopicInfoE)
 </UL>
-<P><STRONG><a name="[10d]"></a>PID::updateConstants(float, float, float)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, pid.o(i._ZN3PID15updateConstantsEfff))
+<P><STRONG><a name="[110]"></a>PID::updateConstants(float, float, float)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, pid.o(i._ZN3PID15updateConstantsEfff))
 <BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pid_callback(const riki_msgs::PID&)
 </UL>
 
-<P><STRONG><a name="[118]"></a>PID::compute(float, float)</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, pid.o(i._ZN3PID7computeEff))
+<P><STRONG><a name="[11b]"></a>PID::compute(float, float)</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, pid.o(i._ZN3PID7computeEff))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = PID::compute(float, float) &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
-<P><STRONG><a name="[140]"></a>PID::PID(float, float, float, float, float)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid.o(i._ZN3PIDC1Efffff))
+<P><STRONG><a name="[143]"></a>PID::PID(float, float, float, float, float)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pid.o(i._ZN3PIDC1Efffff))
 <BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[165]"></a>PID::PID__sub_object(float, float, float, float, float)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, pid.o(i._ZN3PIDC1Efffff), UNUSED)
+<P><STRONG><a name="[168]"></a>PID::PID__sub_object(float, float, float, float, float)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, pid.o(i._ZN3PIDC1Efffff), UNUSED)
 
-<P><STRONG><a name="[150]"></a>ros::normalizeSecNSec(unsigned long&, unsigned long&)</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, time.o(i._ZN3ros16normalizeSecNSecERmS0_))
+<P><STRONG><a name="[153]"></a>ros::normalizeSecNSec(unsigned long&, unsigned long&)</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, time.o(i._ZN3ros16normalizeSecNSecERmS0_))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ros::normalizeSecNSec(unsigned long&, unsigned long&)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
 </UL>
 
-<P><STRONG><a name="[10c]"></a>ros::Publisher::publish(const ros::Msg*)</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mainpp.o(i._ZN3ros9Publisher7publishEPKNS_3MsgE))
-<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
+<P><STRONG><a name="[10f]"></a>ros::Publisher::publish(const ros::Msg*)</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mainpp.o(i._ZN3ros9Publisher7publishEPKNS_3MsgE))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
 </UL>
 
-<P><STRONG><a name="[121]"></a>Gy85::send_value(int, unsigned char)</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, gy85.o(i._ZN4Gy8510send_valueEih))
+<P><STRONG><a name="[124]"></a>Gy85::send_value(int, unsigned char)</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, gy85.o(i._ZN4Gy8510send_valueEih))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Gy85::send_value(int, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::write(unsigned char)
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::endTransmission()
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::write(unsigned char)
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::endTransmission()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
 </UL>
 
-<P><STRONG><a name="[111]"></a>Gy85::check_gyroscope()</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, gy85.o(i._ZN4Gy8515check_gyroscopeEv))
+<P><STRONG><a name="[114]"></a>Gy85::check_gyroscope()</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, gy85.o(i._ZN4Gy8515check_gyroscopeEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Gy85::check_gyroscope() &rArr; Gy85::check_id(int, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
 </UL>
 
-<P><STRONG><a name="[109]"></a>Gy85::measure_gyroscope()</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, gy85.o(i._ZN4Gy8517measure_gyroscopeEv))
+<P><STRONG><a name="[10c]"></a>Gy85::measure_gyroscope()</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, gy85.o(i._ZN4Gy8517measure_gyroscopeEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = Gy85::measure_gyroscope() &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::available()
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::available()
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
 </UL>
 
-<P><STRONG><a name="[126]"></a>Gy85::write_to_register(int, unsigned char, unsigned char)</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, gy85.o(i._ZN4Gy8517write_to_registerEihh))
+<P><STRONG><a name="[129]"></a>Gy85::write_to_register(int, unsigned char, unsigned char)</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, gy85.o(i._ZN4Gy8517write_to_registerEihh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Gy85::write_to_register(int, unsigned char, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::write(unsigned char)
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::endTransmission()
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::write(unsigned char)
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::endTransmission()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_accelerometer()
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_magnetometer()
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_gyroscope()
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_accelerometer()
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_magnetometer()
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_gyroscope()
 </UL>
 
-<P><STRONG><a name="[113]"></a>Gy85::check_magnetometer()</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, gy85.o(i._ZN4Gy8518check_magnetometerEv))
+<P><STRONG><a name="[116]"></a>Gy85::check_magnetometer()</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, gy85.o(i._ZN4Gy8518check_magnetometerEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Gy85::check_magnetometer() &rArr; Gy85::write_to_register(int, unsigned char, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
 </UL>
 
-<P><STRONG><a name="[112]"></a>Gy85::check_accelerometer()</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, gy85.o(i._ZN4Gy8519check_accelerometerEv))
+<P><STRONG><a name="[115]"></a>Gy85::check_accelerometer()</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, gy85.o(i._ZN4Gy8519check_accelerometerEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Gy85::check_accelerometer() &rArr; Gy85::check_id(int, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
 </UL>
 
-<P><STRONG><a name="[108]"></a>Gy85::measure_acceleration()</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, gy85.o(i._ZN4Gy8520measure_accelerationEv))
+<P><STRONG><a name="[10b]"></a>Gy85::measure_acceleration()</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, gy85.o(i._ZN4Gy8520measure_accelerationEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Gy85::measure_acceleration() &rArr; __aeabi_i2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::available()
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::available()
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
 </UL>
 
-<P><STRONG><a name="[10b]"></a>Gy85::measure_magnetometer()</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, gy85.o(i._ZN4Gy8520measure_magnetometerEv))
+<P><STRONG><a name="[10e]"></a>Gy85::measure_magnetometer()</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, gy85.o(i._ZN4Gy8520measure_magnetometerEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = Gy85::measure_magnetometer() &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::available()
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::available()
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
 </UL>
 
-<P><STRONG><a name="[12a]"></a>Gy85::init()</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gy85.o(i._ZN4Gy854initEv))
+<P><STRONG><a name="[12d]"></a>Gy85::init()</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gy85.o(i._ZN4Gy854initEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Gy85::init() &rArr; TwoWire::begin(unsigned char) &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::begin(unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
 </UL>
 
-<P><STRONG><a name="[125]"></a>Gy85::check_id(int, unsigned char)</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, gy85.o(i._ZN4Gy858check_idEih))
+<P><STRONG><a name="[128]"></a>Gy85::check_id(int, unsigned char)</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, gy85.o(i._ZN4Gy858check_idEih))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Gy85::check_id(int, unsigned char) &rArr; WireBase::write(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::write(unsigned char)
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::endTransmission()
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::write(unsigned char)
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::read()
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::endTransmission()
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_accelerometer()
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_gyroscope()
+<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_accelerometer()
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_gyroscope()
 </UL>
 
 <P><STRONG><a name="[69]"></a>Gy85::~Gy85()</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, mainpp.o(i._ZN4Gy85D1Ev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Gy85::~Gy85()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::~TwoWire()
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::~TwoWire()
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
 </UL>
-<P><STRONG><a name="[166]"></a>Gy85::~Gy85__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, mainpp.o(i._ZN4Gy85D1Ev), UNUSED)
+<P><STRONG><a name="[169]"></a>Gy85::~Gy85__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, mainpp.o(i._ZN4Gy85D1Ev), UNUSED)
 
-<P><STRONG><a name="[12c]"></a>Motor::init()</STRONG> (Thumb, 152 bytes, Stack size 40 bytes, motor.o(i._ZN5Motor4initEv))
+<P><STRONG><a name="[12f]"></a>Motor::init()</STRONG> (Thumb, 152 bytes, Stack size 40 bytes, motor.o(i._ZN5Motor4initEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Motor::init() &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
 </UL>
 
-<P><STRONG><a name="[119]"></a>Motor::spin(int)</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, motor.o(i._ZN5Motor4spinEi))
+<P><STRONG><a name="[11c]"></a>Motor::spin(int)</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, motor.o(i._ZN5Motor4spinEi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Motor::spin(int)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
-<P><STRONG><a name="[141]"></a>Motor::Motor(Motor_TypeDef, unsigned, unsigned)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, motor.o(i._ZN5MotorC1E13Motor_TypeDefjj))
+<P><STRONG><a name="[144]"></a>Motor::Motor(Motor_TypeDef, unsigned, unsigned)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, motor.o(i._ZN5MotorC1E13Motor_TypeDefjj))
 <BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[167]"></a>Motor::Motor__sub_object(Motor_TypeDef, unsigned, unsigned)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, motor.o(i._ZN5MotorC1E13Motor_TypeDefjj), UNUSED)
+<P><STRONG><a name="[16a]"></a>Motor::Motor__sub_object(Motor_TypeDef, unsigned, unsigned)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, motor.o(i._ZN5MotorC1E13Motor_TypeDefjj), UNUSED)
 
-<P><STRONG><a name="[14a]"></a>Encoder::init()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, encoder.o(i._ZN7Encoder4initEv))
-<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<P><STRONG><a name="[14e]"></a>Encoder::init()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, encoder.o(i._ZN7Encoder4initEv))
+<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
 </UL>
 
-<P><STRONG><a name="[104]"></a>Encoder::read()</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, encoder.o(i._ZN7Encoder4readEv))
-<BR><BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
+<P><STRONG><a name="[107]"></a>Encoder::read()</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, encoder.o(i._ZN7Encoder4readEv))
+<BR><BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::getRPM()
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
 </UL>
 
-<P><STRONG><a name="[117]"></a>Encoder::getRPM()</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, encoder.o(i._ZN7Encoder6getRPMEv))
+<P><STRONG><a name="[11a]"></a>Encoder::getRPM()</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, encoder.o(i._ZN7Encoder6getRPMEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Encoder::getRPM() &rArr; __aeabi_i2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::read()
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::read()
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
 </UL>
 
-<P><STRONG><a name="[142]"></a>Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned)</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj))
+<P><STRONG><a name="[145]"></a>Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned)</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[168]"></a>Encoder::Encoder__sub_object(Encoder_TypeDef, unsigned, unsigned, unsigned)</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj), UNUSED)
+<P><STRONG><a name="[16b]"></a>Encoder::Encoder__sub_object(Encoder_TypeDef, unsigned, unsigned, unsigned)</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj), UNUSED)
 
-<P><STRONG><a name="[12e]"></a>TwoWire::i2c_get_ack()</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, wire.o(i._ZN7TwoWire11i2c_get_ackEv))
+<P><STRONG><a name="[131]"></a>TwoWire::i2c_get_ack()</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, wire.o(i._ZN7TwoWire11i2c_get_ackEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TwoWire::i2c_get_ack() &rArr; TwoWire::sda_read()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::sda_read()
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::sda_read()
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
 
-<P><STRONG><a name="[132]"></a>TwoWire::i2c_send_ack()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire12i2c_send_ackEv))
+<P><STRONG><a name="[135]"></a>TwoWire::i2c_send_ack()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire12i2c_send_ackEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TwoWire::i2c_send_ack()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
 
-<P><STRONG><a name="[133]"></a>TwoWire::i2c_shift_in()</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, wire.o(i._ZN7TwoWire12i2c_shift_inEv))
+<P><STRONG><a name="[136]"></a>TwoWire::i2c_shift_in()</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, wire.o(i._ZN7TwoWire12i2c_shift_inEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TwoWire::i2c_shift_in() &rArr; TwoWire::sda_read()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::sda_read()
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::sda_read()
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
 
-<P><STRONG><a name="[134]"></a>TwoWire::i2c_send_nack()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire13i2c_send_nackEv))
+<P><STRONG><a name="[137]"></a>TwoWire::i2c_send_nack()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire13i2c_send_nackEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TwoWire::i2c_send_nack()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
 
-<P><STRONG><a name="[135]"></a>TwoWire::i2c_shift_out(unsigned char)</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, wire.o(i._ZN7TwoWire13i2c_shift_outEh))
+<P><STRONG><a name="[138]"></a>TwoWire::i2c_shift_out(unsigned char)</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, wire.o(i._ZN7TwoWire13i2c_shift_outEh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TwoWire::i2c_shift_out(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
@@ -1726,149 +1750,149 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::init()
+<BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::init()
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> wire.o(.constdata__ZTV7TwoWire)
 </UL>
 <P><STRONG><a name="[6c]"></a>TwoWire::process()</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, wire.o(i._ZN7TwoWire7processEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TwoWire::process() &rArr; TwoWire::i2c_shift_out(unsigned char)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_start()
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_stop()
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_out(unsigned char)
-<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_nack()
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_ack()
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_start()
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_stop()
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_out(unsigned char)
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_nack()
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_ack()
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> wire.o(.constdata__ZTV7TwoWire)
 </UL>
-<P><STRONG><a name="[12f]"></a>TwoWire::set_scl(bool)</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWire7set_sclEb))
-<BR><BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<P><STRONG><a name="[132]"></a>TwoWire::set_scl(bool)</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWire7set_sclEb))
+<BR><BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_start()
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_stop()
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_out(unsigned char)
-<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_nack()
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_ack()
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_start()
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_stop()
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_out(unsigned char)
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_nack()
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_ack()
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::begin(unsigned char)
 </UL>
 
-<P><STRONG><a name="[130]"></a>TwoWire::set_sda(bool)</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWire7set_sdaEb))
-<BR><BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<P><STRONG><a name="[133]"></a>TwoWire::set_sda(bool)</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWire7set_sdaEb))
+<BR><BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_start()
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_stop()
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_out(unsigned char)
-<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_nack()
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_ack()
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_start()
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_stop()
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_out(unsigned char)
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_nack()
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_send_ack()
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::begin(unsigned char)
 </UL>
 
-<P><STRONG><a name="[137]"></a>TwoWire::i2c_stop()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire8i2c_stopEv))
+<P><STRONG><a name="[13a]"></a>TwoWire::i2c_stop()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire8i2c_stopEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TwoWire::i2c_stop()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
 
-<P><STRONG><a name="[131]"></a>TwoWire::sda_read()</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire8sda_readEv))
+<P><STRONG><a name="[134]"></a>TwoWire::sda_read()</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire8sda_readEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TwoWire::sda_read()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
+<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_shift_in()
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::i2c_get_ack()
 </UL>
 
-<P><STRONG><a name="[136]"></a>TwoWire::i2c_start()</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire9i2c_startEv))
+<P><STRONG><a name="[139]"></a>TwoWire::i2c_start()</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, wire.o(i._ZN7TwoWire9i2c_startEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TwoWire::i2c_start()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_sda(bool)
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::set_scl(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::process()
 </UL>
 
-<P><STRONG><a name="[144]"></a>TwoWire::TwoWire(unsigned char)</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireC1Eh))
+<P><STRONG><a name="[147]"></a>TwoWire::TwoWire(unsigned char)</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireC1Eh))
 <BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[169]"></a>TwoWire::TwoWire__sub_object(unsigned char)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireC1Eh), UNUSED)
+<P><STRONG><a name="[16c]"></a>TwoWire::TwoWire__sub_object(unsigned char)</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireC1Eh), UNUSED)
 
-<P><STRONG><a name="[12b]"></a>TwoWire::~TwoWire()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireD1Ev))
+<P><STRONG><a name="[12e]"></a>TwoWire::~TwoWire()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireD1Ev))
 <BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::~Gy85()
 </UL>
 
-<P><STRONG><a name="[16a]"></a>TwoWire::~TwoWire__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireD1Ev), UNUSED)
+<P><STRONG><a name="[16d]"></a>TwoWire::~TwoWire__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, wire.o(i._ZN7TwoWireD1Ev), UNUSED)
 
-<P><STRONG><a name="[139]"></a>WireBase::requestFrom(unsigned char, int)</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase11requestFromEhi))
+<P><STRONG><a name="[13c]"></a>WireBase::requestFrom(unsigned char, int)</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase11requestFromEhi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WireBase::requestFrom(unsigned char, int)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
+<BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(int, int)
 </UL>
 
-<P><STRONG><a name="[127]"></a>WireBase::requestFrom(int, int)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase11requestFromEii))
+<P><STRONG><a name="[12a]"></a>WireBase::requestFrom(int, int)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase11requestFromEii))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WireBase::requestFrom(int, int) &rArr; WireBase::requestFrom(unsigned char, int)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(unsigned char, int)
+<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::requestFrom(unsigned char, int)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
 </UL>
 
-<P><STRONG><a name="[124]"></a>WireBase::endTransmission()</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase15endTransmissionEv))
+<P><STRONG><a name="[127]"></a>WireBase::endTransmission()</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase15endTransmissionEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WireBase::endTransmission()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
 </UL>
 
-<P><STRONG><a name="[13a]"></a>WireBase::beginTransmission(unsigned char)</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase17beginTransmissionEh))
-<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
+<P><STRONG><a name="[13d]"></a>WireBase::beginTransmission(unsigned char)</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase17beginTransmissionEh))
+<BR><BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(int)
 </UL>
 
-<P><STRONG><a name="[122]"></a>WireBase::beginTransmission(int)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase17beginTransmissionEi))
-<BR><BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(unsigned char)
+<P><STRONG><a name="[125]"></a>WireBase::beginTransmission(int)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase17beginTransmissionEi))
+<BR><BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WireBase::beginTransmission(unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
 </UL>
 
-<P><STRONG><a name="[128]"></a>WireBase::read()</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase4readEv))
+<P><STRONG><a name="[12b]"></a>WireBase::read()</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase4readEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WireBase::read()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
 </UL>
 
-<P><STRONG><a name="[123]"></a>WireBase::write(unsigned char)</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase5writeEh))
+<P><STRONG><a name="[126]"></a>WireBase::write(unsigned char)</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, wirebase.o(i._ZN8WireBase5writeEh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = WireBase::write(unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::check_id(int, unsigned char)
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::write_to_register(int, unsigned char, unsigned char)
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::send_value(int, unsigned char)
 </UL>
 
-<P><STRONG><a name="[129]"></a>WireBase::available()</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase9availableEv))
-<BR><BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
+<P><STRONG><a name="[12c]"></a>WireBase::available()</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, wirebase.o(i._ZN8WireBase9availableEv))
+<BR><BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_magnetometer()
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_acceleration()
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::measure_gyroscope()
 </UL>
 
 <P><STRONG><a name="[8b]"></a>std_msgs::Time::deserialize(unsigned char*)</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, mainpp.o(i._ZN8std_msgs4Time11deserializeEPh))
@@ -1882,12 +1906,12 @@ Global Symbols
 <P><STRONG><a name="[8c]"></a>std_msgs::Time::getType()</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mainpp.o(i._ZN8std_msgs4Time7getTypeEv))
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN8std_msgs4TimeE)
 </UL>
-<P><STRONG><a name="[14e]"></a>std_msgs::Time::Time()</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mainpp.o(i._ZN8std_msgs4TimeC1Ev))
+<P><STRONG><a name="[151]"></a>std_msgs::Time::Time()</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mainpp.o(i._ZN8std_msgs4TimeC1Ev))
 <BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
 </UL>
 
-<P><STRONG><a name="[16b]"></a>std_msgs::Time::Time__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, mainpp.o(i._ZN8std_msgs4TimeC1Ev), UNUSED)
+<P><STRONG><a name="[16e]"></a>std_msgs::Time::Time__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, mainpp.o(i._ZN8std_msgs4TimeC1Ev), UNUSED)
 
 <P><STRONG><a name="[90]"></a>riki_msgs::Velocities::getMD5()</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mainpp.o(i._ZN9riki_msgs10Velocities6getMD5Ev))
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN9riki_msgs10VelocitiesE)
@@ -1932,24 +1956,24 @@ Global Symbols
 <P><STRONG><a name="[76]"></a>rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, mainpp.o(i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN14rosserial_msgs20RequestParamResponseE)
 </UL>
 <P><STRONG><a name="[7a]"></a>rosserial_msgs::Log::serialize(unsigned char*) const</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, mainpp.o(i._ZNK14rosserial_msgs3Log9serializeEPh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rosserial_msgs::Log::serialize(unsigned char*) const
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN14rosserial_msgs3LogE)
 </UL>
 <P><STRONG><a name="[7d]"></a>rosserial_msgs::TopicInfo::serialize(unsigned char*) const</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, mainpp.o(i._ZNK14rosserial_msgs9TopicInfo9serializeEPh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rosserial_msgs::TopicInfo::serialize(unsigned char*) const
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN14rosserial_msgs9TopicInfoE)
 </UL>
@@ -1973,93 +1997,96 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN9riki_msgs3PIDE)
 </UL>
-<P><STRONG><a name="[13d]"></a>__0sprintf$4</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printf4.o(i.__0sprintf$4), UNUSED)
+<P><STRONG><a name="[140]"></a>__0sprintf$4</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printf4.o(i.__0sprintf$4), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[16c]"></a>__1sprintf$4</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf4.o(i.__0sprintf$4), UNUSED)
+<P><STRONG><a name="[16f]"></a>__1sprintf$4</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf4.o(i.__0sprintf$4), UNUSED)
 
-<P><STRONG><a name="[105]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf4.o(i.__0sprintf$4))
+<P><STRONG><a name="[108]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf4.o(i.__0sprintf$4))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
+<BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
 </UL>
 
 <P><STRONG><a name="[b5]"></a>free</STRONG> (Thumb, 88 bytes, Stack size 12 bytes, mallocr.o(i.__free$realloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = free
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
 </UL>
 
 <P><STRONG><a name="[a6]"></a>malloc</STRONG> (Thumb, 64 bytes, Stack size 32 bytes, mallocr.o(i.__malloc$realloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = malloc &rArr; internal_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;internal_alloc
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;internal_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
 </UL>
 
-<P><STRONG><a name="[16d]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[170]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[16e]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[171]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[16f]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[172]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[146]"></a>loop</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, mainpp.o(i.loop))
+<P><STRONG><a name="[149]"></a>loop</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, mainpp.o(i.loop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = loop &rArr; ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce() &rArr; rosserial_msgs::RequestParamResponse::deserialize(unsigned char*) &rArr; realloc &rArr; malloc &rArr; internal_alloc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop_base()
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop_base()
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_base()
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;publish_imu()
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5f]"></a>main</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[5f]"></a>main</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = main &rArr; setup &rArr; ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce() &rArr; rosserial_msgs::RequestParamResponse::deserialize(unsigned char*) &rArr; realloc &rArr; malloc &rArr; internal_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM5_Init
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM4_Init
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Init
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Encoder_Start
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[11d]"></a>realloc</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, mallocr.o(i.realloc))
+<P><STRONG><a name="[120]"></a>realloc</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, mallocr.o(i.realloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = realloc &rArr; malloc &rArr; internal_alloc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;internal_alloc
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;internal_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::RequestParamResponse::deserialize(unsigned char*)
 </UL>
 
-<P><STRONG><a name="[149]"></a>setup</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, mainpp.o(i.setup))
+<P><STRONG><a name="[14d]"></a>setup</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, mainpp.o(i.setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = setup &rArr; ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce() &rArr; rosserial_msgs::RequestParamResponse::deserialize(unsigned char*) &rArr; realloc &rArr; malloc &rArr; internal_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::init()
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::init()
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::advertise(ros::Publisher&)
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::init()
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::init()
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gy85::init()
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::advertise(ros::Publisher&)
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::reset_rbuf()
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::reset_rbuf()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2096,74 +2123,74 @@ Global Symbols
 <P><STRONG><a name="[87]"></a>ros::Subscriber&lang;riki_msgs::PID&rang;::getMsgMD5()</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev))
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE)
 </UL>
-<P><STRONG><a name="[14f]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::negotiateTopics()</STRONG> (Thumb, 184 bytes, Stack size 48 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv))
+<P><STRONG><a name="[152]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::negotiateTopics()</STRONG> (Thumb, 184 bytes, Stack size 48 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::negotiateTopics()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
 </UL>
 
-<P><STRONG><a name="[14d]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv))
+<P><STRONG><a name="[150]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std_msgs::Time::Time()
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std_msgs::Time::Time()
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()
 </UL>
 
-<P><STRONG><a name="[106]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc))
+<P><STRONG><a name="[109]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_debug()
 </UL>
 
 <P><STRONG><a name="[88]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::publish(int, const ros::Msg*)</STRONG> (Thumb, 232 bytes, Stack size 32 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::publish(int, const ros::Msg*) &rArr; STM32Hardware::flush() &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::flush()
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::flush()
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE)
 </UL>
-<P><STRONG><a name="[114]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc))
+<P><STRONG><a name="[117]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::logerror(const char*) &rArr; ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::log(char, const char*)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::publish(int, const ros::Msg*)
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_imu()
 </UL>
 
 <P><STRONG><a name="[89]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce()</STRONG> (Thumb, 656 bytes, Stack size 56 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::spinOnce() &rArr; rosserial_msgs::RequestParamResponse::deserialize(unsigned char*) &rArr; realloc &rArr; malloc &rArr; internal_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::normalizeSecNSec(unsigned long&, unsigned long&)
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::negotiateTopics()
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std_msgs::Time::Time()
+<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::normalizeSecNSec(unsigned long&, unsigned long&)
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::requestSyncTime()
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::negotiateTopics()
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std_msgs::Time::Time()
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std_msgs::Time::deserialize(unsigned char*)
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rosserial_msgs::RequestParamResponse::deserialize(unsigned char*)
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STM32Hardware::time()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
+<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loop
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE)
 </UL>
-<P><STRONG><a name="[14c]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::advertise(ros::Publisher&)</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE))
-<BR><BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
+<P><STRONG><a name="[14f]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::advertise(ros::Publisher&)</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE))
+<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setup
 </UL>
 
-<P><STRONG><a name="[145]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle_()</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev))
+<P><STRONG><a name="[148]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle_()</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle_()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_mainpp_cpp_3a322398
 </UL>
 
-<P><STRONG><a name="[170]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle___sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev), UNUSED)
+<P><STRONG><a name="[173]"></a>ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle___sub_object()</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev), UNUSED)
 <P>
 <H3>
 Local Symbols
@@ -2171,13 +2198,13 @@ Local Symbols
 <P><STRONG><a name="[98]"></a>__sti___10_mainpp_cpp_3a322398</STRONG> (Thumb, 404 bytes, Stack size 40 bytes, mainpp.o(i.__sti___10_mainpp_cpp_3a322398))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = __sti___10_mainpp_cpp_3a322398 &rArr; Kinematics::Kinematics(int, float, float, float) &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::TwoWire(unsigned char)
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned)
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::Motor(Motor_TypeDef, unsigned, unsigned)
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::PID(float, float, float, float, float)
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle_()
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;geometry_msgs::Vector3::Vector3()
+<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TwoWire::TwoWire(unsigned char)
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned)
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Motor::Motor(Motor_TypeDef, unsigned, unsigned)
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::PID(float, float, float, float, float)
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kinematics::Kinematics(int, float, float, float)
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ros::NodeHandle_&lang;STM32Hardware, (int)25, (int)25, (int)512, (int)512&rang;::NodeHandle_()
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;geometry_msgs::Vector3::Vector3()
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mainpp.o(.init_array)
@@ -2186,22 +2213,22 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 </UL>
 
-<P><STRONG><a name="[df]"></a>TIM_OC1_SetConfig</STRONG> (Thumb, 88 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_OC1_SetConfig))
+<P><STRONG><a name="[e1]"></a>TIM_OC1_SetConfig</STRONG> (Thumb, 88 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_OC1_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_OC1_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
 </UL>
 
-<P><STRONG><a name="[e1]"></a>TIM_OC3_SetConfig</STRONG> (Thumb, 96 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_OC3_SetConfig))
+<P><STRONG><a name="[e3]"></a>TIM_OC3_SetConfig</STRONG> (Thumb, 96 bytes, Stack size 20 bytes, stm32f4xx_hal_tim.o(i.TIM_OC3_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_OC3_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
 </UL>
 
-<P><STRONG><a name="[e2]"></a>TIM_OC4_SetConfig</STRONG> (Thumb, 70 bytes, Stack size 12 bytes, stm32f4xx_hal_tim.o(i.TIM_OC4_SetConfig))
+<P><STRONG><a name="[e4]"></a>TIM_OC4_SetConfig</STRONG> (Thumb, 70 bytes, Stack size 12 bytes, stm32f4xx_hal_tim.o(i.TIM_OC4_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_OC4_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_ConfigChannel
 </UL>
 
 <P><STRONG><a name="[ce]"></a>TIM_TI1_ConfigInputStage</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.TIM_TI1_ConfigInputStage))
@@ -2219,16 +2246,16 @@ Local Symbols
 <P><STRONG><a name="[62]"></a>UART_DMAAbortOnError</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_DMAAbortOnError))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART_DMAAbortOnError
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_uart.o(i.HAL_UART_IRQHandler)
 </UL>
 <P><STRONG><a name="[65]"></a>UART_DMAError</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.UART_DMAError))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UART_DMAError
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndTxTransfer
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndTxTransfer
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
 </UL>
 <BR>[Address Reference Count : 2]<UL><LI> stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA)
 <LI> stm32f4xx_hal_uart.o(i.HAL_UART_Transmit_DMA)
@@ -2236,59 +2263,59 @@ Local Symbols
 <P><STRONG><a name="[63]"></a>UART_DMAReceiveCplt</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_DMAReceiveCplt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = UART_DMAReceiveCplt &rArr; HAL_UART_RxCpltCallback &rArr; STM32Hardware::reset_rbuf() &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA)
 </UL>
 <P><STRONG><a name="[64]"></a>UART_DMARxHalfCplt</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_DMARxHalfCplt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART_DMARxHalfCplt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxHalfCpltCallback
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxHalfCpltCallback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA)
 </UL>
 <P><STRONG><a name="[66]"></a>UART_DMATransmitCplt</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_DMATransmitCplt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = UART_DMATransmitCplt &rArr; HAL_UART_TxCpltCallback &rArr; STM32Hardware::flush() &rArr; HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_uart.o(i.HAL_UART_Transmit_DMA)
 </UL>
 <P><STRONG><a name="[67]"></a>UART_DMATxHalfCplt</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_DMATxHalfCplt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART_DMATxHalfCplt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxHalfCpltCallback
+<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxHalfCpltCallback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> stm32f4xx_hal_uart.o(i.HAL_UART_Transmit_DMA)
 </UL>
-<P><STRONG><a name="[e7]"></a>UART_EndRxTransfer</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.UART_EndRxTransfer))
-<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<P><STRONG><a name="[ea]"></a>UART_EndRxTransfer</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.UART_EndRxTransfer))
+<BR><BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMAError
 </UL>
 
-<P><STRONG><a name="[fe]"></a>UART_EndTxTransfer</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.UART_EndTxTransfer))
+<P><STRONG><a name="[101]"></a>UART_EndTxTransfer</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.UART_EndTxTransfer))
 <BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMAError
 </UL>
 
-<P><STRONG><a name="[e6]"></a>UART_Receive_IT</STRONG> (Thumb, 150 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_Receive_IT))
+<P><STRONG><a name="[e9]"></a>UART_Receive_IT</STRONG> (Thumb, 150 bytes, Stack size 8 bytes, stm32f4xx_hal_uart.o(i.UART_Receive_IT))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = UART_Receive_IT &rArr; HAL_UART_RxCpltCallback &rArr; STM32Hardware::reset_rbuf() &rArr; HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; DMA_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_RxCpltCallback
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 </UL>
 
-<P><STRONG><a name="[ee]"></a>UART_SetConfig</STRONG> (Thumb, 676 bytes, Stack size 24 bytes, stm32f4xx_hal_uart.o(i.UART_SetConfig))
+<P><STRONG><a name="[f1]"></a>UART_SetConfig</STRONG> (Thumb, 676 bytes, Stack size 24 bytes, stm32f4xx_hal_uart.o(i.UART_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UART_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK2Freq
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK2Freq
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
 
-<P><STRONG><a name="[ea]"></a>UART_Transmit_IT</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.UART_Transmit_IT))
-<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<P><STRONG><a name="[ed]"></a>UART_Transmit_IT</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.UART_Transmit_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 </UL>
 
 <P><STRONG><a name="[bb]"></a>DMA_CalcBaseAndBitshift</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_hal_dma.o(i.DMA_CalcBaseAndBitshift))
@@ -2312,23 +2339,23 @@ Local Symbols
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
 </UL>
 
-<P><STRONG><a name="[13e]"></a>_printf_core</STRONG> (Thumb, 552 bytes, Stack size 96 bytes, printf4.o(i._printf_core), UNUSED)
+<P><STRONG><a name="[141]"></a>_printf_core</STRONG> (Thumb, 552 bytes, Stack size 96 bytes, printf4.o(i._printf_core), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$4
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$4
 </UL>
 
 <P><STRONG><a name="[68]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, printf4.o(i._sputc))
-<BR><BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$4
+<BR><BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf4.o(i.__0sprintf$4)
 </UL>
-<P><STRONG><a name="[13f]"></a>internal_alloc</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, mallocr.o(i.internal_alloc))
+<P><STRONG><a name="[142]"></a>internal_alloc</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, mallocr.o(i.internal_alloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = internal_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;realloc
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 <P>
