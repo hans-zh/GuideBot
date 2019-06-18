@@ -67,8 +67,7 @@ void Encoder::init()
 
 int32_t Encoder::read()
 {
-	uint16_t timer_value = 111; //
-	// __HAL_TIM_Get_Counter(ENCODER_TIM[this->encoder]);
+	uint16_t timer_value = ENCODER_TIM[this->encoder]->CNT;
 	last_timer_diff = timer_value - last_timer;
 	last_timer = timer_value;
 	position += (int32_t) last_timer_diff;

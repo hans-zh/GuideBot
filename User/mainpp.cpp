@@ -14,8 +14,8 @@
 #include <geometry_msgs/Vector3.h>
 #include <std_msgs/String.h>
 
-double required_angular_vel = 0;
-double required_linear_vel = 0;
+double required_angular_vel = 1.0;
+double required_linear_vel = 0.5;
 uint32_t previous_command_time = 0;
 
 bool is_first = true;

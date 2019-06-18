@@ -626,6 +626,7 @@ Section Cross References
     gy85.o(.ARM.exidx) refers to gy85.o(i._ZN4Gy8520measure_accelerationEv) for i._ZN4Gy8520measure_accelerationEv
     gy85.o(.ARM.exidx) refers to gy85.o(i._ZN4Gy8518check_magnetometerEv) for i._ZN4Gy8518check_magnetometerEv
     gy85.o(.ARM.exidx) refers to gy85.o(i._ZN4Gy8520measure_magnetometerEv) for i._ZN4Gy8520measure_magnetometerEv
+    encoder.o(i._ZN7Encoder4readEv) refers to encoder.o(.data) for .data
     encoder.o(i._ZN7Encoder6getRPMEv) refers to encoder.o(i._ZN7Encoder4readEv) for Encoder::read()
     encoder.o(i._ZN7Encoder6getRPMEv) refers to dfltui.o(.text) for __aeabi_ui2d
     encoder.o(i._ZN7Encoder6getRPMEv) refers to ddiv.o(.text) for __aeabi_ddiv
@@ -1824,7 +1825,6 @@ Removing Unused input sections from the image.
     Removing encoder.o(.ARM.exidx), (8 bytes).
     Removing encoder.o(.ARM.exidx), (8 bytes).
     Removing encoder.o(.data), (8 bytes).
-    Removing encoder.o(.data), (8 bytes).
     Removing wirebase.o(.rev16_text), (4 bytes).
     Removing wirebase.o(.revsh_text), (4 bytes).
     Removing wirebase.o(.rrx_text), (6 bytes).
@@ -1966,7 +1966,7 @@ Removing Unused input sections from the image.
     Removing wire.o(.constdata__ZTI7TwoWire), (12 bytes).
     Removing wire.o(.constdata__ZTS7TwoWire), (9 bytes).
 
-577 unused section(s) (total 24083 bytes) removed from the image.
+576 unused section(s) (total 24075 bytes) removed from the image.
 
 ==============================================================================
 
@@ -2203,10 +2203,10 @@ Image Symbol Table
     i.HAL_TIM_ConfigClockSource              0x080015f0   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource)
     i.HAL_TIM_Encoder_Init                   0x080016c6   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Init)
     i.HAL_TIM_Encoder_MspInit                0x08001760   Section        0  tim.o(i.HAL_TIM_Encoder_MspInit)
-    i.HAL_TIM_Encoder_Start                  0x08001824   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start)
-    i.HAL_TIM_IC_CaptureCallback             0x08001858   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback)
-    i.HAL_TIM_IRQHandler                     0x0800185a   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler)
-    i.HAL_TIM_MspPostInit                    0x080019c0   Section        0  tim.o(i.HAL_TIM_MspPostInit)
+    i.HAL_TIM_Encoder_Start                  0x08001820   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start)
+    i.HAL_TIM_IC_CaptureCallback             0x08001854   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback)
+    i.HAL_TIM_IRQHandler                     0x08001856   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler)
+    i.HAL_TIM_MspPostInit                    0x080019bc   Section        0  tim.o(i.HAL_TIM_MspPostInit)
     i.HAL_TIM_OC_DelayElapsedCallback        0x08001a10   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback)
     i.HAL_TIM_PWM_ConfigChannel              0x08001a12   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel)
     i.HAL_TIM_PWM_Init                       0x08001ae2   Section        0  stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Init)
@@ -2332,131 +2332,131 @@ Image Symbol Table
     i._ZN5Motor4spinEi                       0x08003718   Section        0  motor.o(i._ZN5Motor4spinEi)
     i._ZN5MotorC1E13Motor_TypeDefjj          0x08003770   Section        0  motor.o(i._ZN5MotorC1E13Motor_TypeDefjj)
     i._ZN7Encoder4initEv                     0x08003778   Section        0  encoder.o(i._ZN7Encoder4initEv)
-    i._ZN7Encoder4readEv                     0x0800377a   Section        0  encoder.o(i._ZN7Encoder4readEv)
-    i._ZN7Encoder6getRPMEv                   0x08003794   Section        0  encoder.o(i._ZN7Encoder6getRPMEv)
-    i._ZN7EncoderC1E15Encoder_TypeDefjjj     0x0800380c   Section        0  encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj)
-    i._ZN7TwoWire11i2c_get_ackEv             0x08003826   Section        0  wire.o(i._ZN7TwoWire11i2c_get_ackEv)
-    i._ZN7TwoWire12i2c_send_ackEv            0x08003856   Section        0  wire.o(i._ZN7TwoWire12i2c_send_ackEv)
-    i._ZN7TwoWire12i2c_shift_inEv            0x08003874   Section        0  wire.o(i._ZN7TwoWire12i2c_shift_inEv)
-    i._ZN7TwoWire13i2c_send_nackEv           0x080038ac   Section        0  wire.o(i._ZN7TwoWire13i2c_send_nackEv)
-    i._ZN7TwoWire13i2c_shift_outEh           0x080038ca   Section        0  wire.o(i._ZN7TwoWire13i2c_shift_outEh)
-    i._ZN7TwoWire5beginEh                    0x08003908   Section        0  wire.o(i._ZN7TwoWire5beginEh)
-    i._ZN7TwoWire7processEv                  0x0800397c   Section        0  wire.o(i._ZN7TwoWire7processEv)
-    i._ZN7TwoWire7set_sclEb                  0x08003a24   Section        0  wire.o(i._ZN7TwoWire7set_sclEb)
-    i._ZN7TwoWire7set_sdaEb                  0x08003a4c   Section        0  wire.o(i._ZN7TwoWire7set_sdaEb)
-    i._ZN7TwoWire8i2c_stopEv                 0x08003a74   Section        0  wire.o(i._ZN7TwoWire8i2c_stopEv)
-    i._ZN7TwoWire8sda_readEv                 0x08003a94   Section        0  wire.o(i._ZN7TwoWire8sda_readEv)
-    i._ZN7TwoWire9i2c_startEv                0x08003aac   Section        0  wire.o(i._ZN7TwoWire9i2c_startEv)
-    i._ZN7TwoWireC1Eh                        0x08003ac4   Section        0  wire.o(i._ZN7TwoWireC1Eh)
-    i._ZN7TwoWireD1Ev                        0x08003ad4   Section        0  wire.o(i._ZN7TwoWireD1Ev)
-    i._ZN8WireBase11requestFromEhi           0x08003ad6   Section        0  wirebase.o(i._ZN8WireBase11requestFromEhi)
-    i._ZN8WireBase11requestFromEii           0x08003b10   Section        0  wirebase.o(i._ZN8WireBase11requestFromEii)
-    i._ZN8WireBase15endTransmissionEv        0x08003b16   Section        0  wirebase.o(i._ZN8WireBase15endTransmissionEv)
-    i._ZN8WireBase17beginTransmissionEh      0x08003b36   Section        0  wirebase.o(i._ZN8WireBase17beginTransmissionEh)
-    i._ZN8WireBase17beginTransmissionEi      0x08003b4c   Section        0  wirebase.o(i._ZN8WireBase17beginTransmissionEi)
-    i._ZN8WireBase4readEv                    0x08003b52   Section        0  wirebase.o(i._ZN8WireBase4readEv)
-    i._ZN8WireBase5writeEh                   0x08003b8c   Section        0  wirebase.o(i._ZN8WireBase5writeEh)
-    i._ZN8WireBase9availableEv               0x08003bb4   Section        0  wirebase.o(i._ZN8WireBase9availableEv)
-    i._ZN8std_msgs4Time11deserializeEPh      0x08003bc2   Section        0  mainpp.o(i._ZN8std_msgs4Time11deserializeEPh)
-    i._ZN8std_msgs4Time6getMD5Ev             0x08003c00   Section        0  mainpp.o(i._ZN8std_msgs4Time6getMD5Ev)
-    i._ZN8std_msgs4Time7getTypeEv            0x08003c08   Section        0  mainpp.o(i._ZN8std_msgs4Time7getTypeEv)
-    i._ZN8std_msgs4TimeC1Ev                  0x08003c10   Section        0  mainpp.o(i._ZN8std_msgs4TimeC1Ev)
-    i._ZN9riki_msgs10Velocities6getMD5Ev     0x08003c20   Section        0  mainpp.o(i._ZN9riki_msgs10Velocities6getMD5Ev)
-    i._ZN9riki_msgs10Velocities7getTypeEv    0x08003c28   Section        0  mainpp.o(i._ZN9riki_msgs10Velocities7getTypeEv)
-    i._ZN9riki_msgs3Imu6getMD5Ev             0x08003c30   Section        0  mainpp.o(i._ZN9riki_msgs3Imu6getMD5Ev)
-    i._ZN9riki_msgs3Imu7getTypeEv            0x08003c38   Section        0  mainpp.o(i._ZN9riki_msgs3Imu7getTypeEv)
-    i._ZN9riki_msgs3PID11deserializeEPh      0x08003c40   Section        0  mainpp.o(i._ZN9riki_msgs3PID11deserializeEPh)
-    i._ZN9riki_msgs3PID6getMD5Ev             0x08003c8c   Section        0  mainpp.o(i._ZN9riki_msgs3PID6getMD5Ev)
-    i._ZN9riki_msgs3PID7getTypeEv            0x08003c94   Section        0  mainpp.o(i._ZN9riki_msgs3PID7getTypeEv)
-    i._ZNK13geometry_msgs5Twist9serializeEPh 0x08003c9c   Section        0  mainpp.o(i._ZNK13geometry_msgs5Twist9serializeEPh)
-    i._ZNK13geometry_msgs7Vector39serializeEPh 0x08003cb8   Section        0  mainpp.o(i._ZNK13geometry_msgs7Vector39serializeEPh)
-    i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh 0x08003d82   Section        0  mainpp.o(i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh)
-    i._ZNK14rosserial_msgs3Log9serializeEPh  0x08003e3e   Section        0  mainpp.o(i._ZNK14rosserial_msgs3Log9serializeEPh)
-    i._ZNK14rosserial_msgs9TopicInfo9serializeEPh 0x08003e62   Section        0  mainpp.o(i._ZNK14rosserial_msgs9TopicInfo9serializeEPh)
-    i._ZNK8std_msgs4Time9serializeEPh        0x08003ed8   Section        0  mainpp.o(i._ZNK8std_msgs4Time9serializeEPh)
-    i._ZNK9riki_msgs10Velocities9serializeEPh 0x08003f0a   Section        0  mainpp.o(i._ZNK9riki_msgs10Velocities9serializeEPh)
-    i._ZNK9riki_msgs3Imu9serializeEPh        0x08003f44   Section        0  mainpp.o(i._ZNK9riki_msgs3Imu9serializeEPh)
-    i._ZNK9riki_msgs3PID9serializeEPh        0x08003f6c   Section        0  mainpp.o(i._ZNK9riki_msgs3PID9serializeEPh)
-    i.__0sprintf$4                           0x08003fa8   Section        0  printf4.o(i.__0sprintf$4)
-    i.__NVIC_SetPriority                     0x08003fd0   Section        0  stm32f4xx_hal_cortex.o(i.__NVIC_SetPriority)
-    __NVIC_SetPriority                       0x08003fd1   Thumb Code    32  stm32f4xx_hal_cortex.o(i.__NVIC_SetPriority)
-    i.__free$realloc                         0x08003ff0   Section        0  mallocr.o(i.__free$realloc)
-    i.__malloc$realloc                       0x0800404c   Section        0  mallocr.o(i.__malloc$realloc)
-    i.__scatterload_copy                     0x0800409c   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080040aa   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080040ac   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.__sti___10_mainpp_cpp_3a322398         0x080040bc   Section        0  mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
-    __sti___10_mainpp_cpp_3a322398           0x080040bd   Thumb Code   404  mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
-    i._printf_core                           0x080042c0   Section        0  printf4.o(i._printf_core)
-    _printf_core                             0x080042c1   Thumb Code   552  printf4.o(i._printf_core)
-    i._sputc                                 0x080044ec   Section        0  printf4.o(i._sputc)
-    _sputc                                   0x080044ed   Thumb Code    10  printf4.o(i._sputc)
-    i.internal_alloc                         0x080044f8   Section        0  mallocr.o(i.internal_alloc)
-    internal_alloc                           0x080044f9   Thumb Code    76  mallocr.o(i.internal_alloc)
-    i.loop                                   0x08004548   Section        0  mainpp.o(i.loop)
-    i.main                                   0x080045d0   Section        0  main.o(i.main)
-    i.realloc                                0x08004648   Section        0  mallocr.o(i.realloc)
-    i.setup                                  0x080046b4   Section        0  mainpp.o(i.setup)
-    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv 0x080047a0   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv)
-    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv 0x080047a8   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv)
-    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh 0x080047ac   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh)
-    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev 0x080047c4   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev)
-    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv 0x080047cc   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv)
-    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv 0x080047d4   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv)
-    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh 0x080047d8   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh)
-    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev 0x080047f0   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv 0x080047f8   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv 0x080048b4   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc 0x080048d8   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE 0x080048f4   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc 0x080049e0   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv 0x080049e8   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE 0x08004c84   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE)
-    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev 0x08004cb0   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev)
-    .constdata                               0x08004d3c   Section       28  mainpp.o(.constdata)
-    rosserial_msgs::REQUESTPARAM             0x08004d3c   Data          28  mainpp.o(.constdata)
-    .constdata                               0x08004d58   Section        8  stm32f4xx_hal_dma.o(.constdata)
-    flagBitshiftOffset                       0x08004d58   Data           8  stm32f4xx_hal_dma.o(.constdata)
-    .constdata                               0x08004d60   Section       16  system_stm32f4xx.o(.constdata)
-    .constdata                               0x08004d70   Section        8  system_stm32f4xx.o(.constdata)
-    .constdata                               0x08004d78   Section       16  motor.o(.constdata)
-    MOTOR_A_PIN                              0x08004d78   Data           4  motor.o(.constdata)
-    MOTOR_B_PIN                              0x08004d7c   Data           4  motor.o(.constdata)
-    MOTOR_C_PIN                              0x08004d80   Data           4  motor.o(.constdata)
-    MOTOR_PWM_PIN                            0x08004d84   Data           4  motor.o(.constdata)
-    .constdata__ZTV7TwoWire                  0x08004d88   Section       16  wire.o(.constdata__ZTV7TwoWire)
-    .constdata__ZTVN13geometry_msgs5TwistE   0x08004d98   Section       24  mainpp.o(.constdata__ZTVN13geometry_msgs5TwistE)
-    .constdata__ZTVN13geometry_msgs7Vector3E 0x08004db0   Section       24  mainpp.o(.constdata__ZTVN13geometry_msgs7Vector3E)
-    .constdata__ZTVN14rosserial_msgs20RequestParamResponseE 0x08004dc8   Section       24  mainpp.o(.constdata__ZTVN14rosserial_msgs20RequestParamResponseE)
-    .constdata__ZTVN14rosserial_msgs3LogE    0x08004de0   Section       24  mainpp.o(.constdata__ZTVN14rosserial_msgs3LogE)
-    .constdata__ZTVN14rosserial_msgs9TopicInfoE 0x08004df8   Section       24  mainpp.o(.constdata__ZTVN14rosserial_msgs9TopicInfoE)
-    .constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE 0x08004e10   Section       24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE)
-    .constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE 0x08004e28   Section       24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE)
-    .constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE 0x08004e40   Section       20  mainpp.o(.constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE)
-    .constdata__ZTVN8std_msgs4TimeE          0x08004e54   Section       24  mainpp.o(.constdata__ZTVN8std_msgs4TimeE)
-    .constdata__ZTVN9riki_msgs10VelocitiesE  0x08004e6c   Section       24  mainpp.o(.constdata__ZTVN9riki_msgs10VelocitiesE)
-    .constdata__ZTVN9riki_msgs3ImuE          0x08004e84   Section       24  mainpp.o(.constdata__ZTVN9riki_msgs3ImuE)
-    .constdata__ZTVN9riki_msgs3PIDE          0x08004e9c   Section       24  mainpp.o(.constdata__ZTVN9riki_msgs3PIDE)
-    .constdata__ZZN13geometry_msgs5Twist6getMD5EvEs 0x08004eb4   Section       33  mainpp.o(.constdata__ZZN13geometry_msgs5Twist6getMD5EvEs)
-    .constdata__ZZN13geometry_msgs5Twist7getTypeEvEs 0x08004ed5   Section       20  mainpp.o(.constdata__ZZN13geometry_msgs5Twist7getTypeEvEs)
-    .constdata__ZZN13geometry_msgs7Vector36getMD5EvEs 0x08004ee9   Section       33  mainpp.o(.constdata__ZZN13geometry_msgs7Vector36getMD5EvEs)
-    .constdata__ZZN13geometry_msgs7Vector37getTypeEvEs 0x08004f0a   Section       22  mainpp.o(.constdata__ZZN13geometry_msgs7Vector37getTypeEvEs)
-    .constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs 0x08004f20   Section       33  mainpp.o(.constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs)
-    .constdata__ZZN14rosserial_msgs3Log6getMD5EvEs 0x08004f41   Section       33  mainpp.o(.constdata__ZZN14rosserial_msgs3Log6getMD5EvEs)
-    .constdata__ZZN14rosserial_msgs3Log7getTypeEvEs 0x08004f62   Section       19  mainpp.o(.constdata__ZZN14rosserial_msgs3Log7getTypeEvEs)
-    .constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs 0x08004f75   Section       33  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs)
-    .constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs 0x08004f96   Section       25  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs)
-    .constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs 0x08004faf   Section       57  mainpp.o(.constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs)
-    .constdata__ZZN8std_msgs4Time6getMD5EvEs 0x08004fe8   Section       33  mainpp.o(.constdata__ZZN8std_msgs4Time6getMD5EvEs)
-    .constdata__ZZN8std_msgs4Time7getTypeEvEs 0x08005009   Section       14  mainpp.o(.constdata__ZZN8std_msgs4Time7getTypeEvEs)
-    .constdata__ZZN9riki_msgs10Velocities6getMD5EvEs 0x08005017   Section       33  mainpp.o(.constdata__ZZN9riki_msgs10Velocities6getMD5EvEs)
-    .constdata__ZZN9riki_msgs10Velocities7getTypeEvEs 0x08005038   Section       21  mainpp.o(.constdata__ZZN9riki_msgs10Velocities7getTypeEvEs)
-    .constdata__ZZN9riki_msgs3Imu6getMD5EvEs 0x0800504d   Section       33  mainpp.o(.constdata__ZZN9riki_msgs3Imu6getMD5EvEs)
-    .constdata__ZZN9riki_msgs3Imu7getTypeEvEs 0x0800506e   Section       14  mainpp.o(.constdata__ZZN9riki_msgs3Imu7getTypeEvEs)
-    .constdata__ZZN9riki_msgs3PID6getMD5EvEs 0x0800507c   Section       33  mainpp.o(.constdata__ZZN9riki_msgs3PID6getMD5EvEs)
-    .constdata__ZZN9riki_msgs3PID7getTypeEvEs 0x0800509d   Section       14  mainpp.o(.constdata__ZZN9riki_msgs3PID7getTypeEvEs)
-    .init_array                              0x080050cc   Section        4  mainpp.o(.init_array)
-    .init_array                              0x080050d0   Section        0  cpp_init.o(.init_array)
+    i._ZN7Encoder4readEv                     0x0800377c   Section        0  encoder.o(i._ZN7Encoder4readEv)
+    i._ZN7Encoder6getRPMEv                   0x080037a0   Section        0  encoder.o(i._ZN7Encoder6getRPMEv)
+    i._ZN7EncoderC1E15Encoder_TypeDefjjj     0x08003818   Section        0  encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj)
+    i._ZN7TwoWire11i2c_get_ackEv             0x08003832   Section        0  wire.o(i._ZN7TwoWire11i2c_get_ackEv)
+    i._ZN7TwoWire12i2c_send_ackEv            0x08003862   Section        0  wire.o(i._ZN7TwoWire12i2c_send_ackEv)
+    i._ZN7TwoWire12i2c_shift_inEv            0x08003880   Section        0  wire.o(i._ZN7TwoWire12i2c_shift_inEv)
+    i._ZN7TwoWire13i2c_send_nackEv           0x080038b8   Section        0  wire.o(i._ZN7TwoWire13i2c_send_nackEv)
+    i._ZN7TwoWire13i2c_shift_outEh           0x080038d6   Section        0  wire.o(i._ZN7TwoWire13i2c_shift_outEh)
+    i._ZN7TwoWire5beginEh                    0x08003914   Section        0  wire.o(i._ZN7TwoWire5beginEh)
+    i._ZN7TwoWire7processEv                  0x08003988   Section        0  wire.o(i._ZN7TwoWire7processEv)
+    i._ZN7TwoWire7set_sclEb                  0x08003a30   Section        0  wire.o(i._ZN7TwoWire7set_sclEb)
+    i._ZN7TwoWire7set_sdaEb                  0x08003a58   Section        0  wire.o(i._ZN7TwoWire7set_sdaEb)
+    i._ZN7TwoWire8i2c_stopEv                 0x08003a80   Section        0  wire.o(i._ZN7TwoWire8i2c_stopEv)
+    i._ZN7TwoWire8sda_readEv                 0x08003aa0   Section        0  wire.o(i._ZN7TwoWire8sda_readEv)
+    i._ZN7TwoWire9i2c_startEv                0x08003ab8   Section        0  wire.o(i._ZN7TwoWire9i2c_startEv)
+    i._ZN7TwoWireC1Eh                        0x08003ad0   Section        0  wire.o(i._ZN7TwoWireC1Eh)
+    i._ZN7TwoWireD1Ev                        0x08003ae0   Section        0  wire.o(i._ZN7TwoWireD1Ev)
+    i._ZN8WireBase11requestFromEhi           0x08003ae2   Section        0  wirebase.o(i._ZN8WireBase11requestFromEhi)
+    i._ZN8WireBase11requestFromEii           0x08003b1c   Section        0  wirebase.o(i._ZN8WireBase11requestFromEii)
+    i._ZN8WireBase15endTransmissionEv        0x08003b22   Section        0  wirebase.o(i._ZN8WireBase15endTransmissionEv)
+    i._ZN8WireBase17beginTransmissionEh      0x08003b42   Section        0  wirebase.o(i._ZN8WireBase17beginTransmissionEh)
+    i._ZN8WireBase17beginTransmissionEi      0x08003b58   Section        0  wirebase.o(i._ZN8WireBase17beginTransmissionEi)
+    i._ZN8WireBase4readEv                    0x08003b5e   Section        0  wirebase.o(i._ZN8WireBase4readEv)
+    i._ZN8WireBase5writeEh                   0x08003b98   Section        0  wirebase.o(i._ZN8WireBase5writeEh)
+    i._ZN8WireBase9availableEv               0x08003bc0   Section        0  wirebase.o(i._ZN8WireBase9availableEv)
+    i._ZN8std_msgs4Time11deserializeEPh      0x08003bce   Section        0  mainpp.o(i._ZN8std_msgs4Time11deserializeEPh)
+    i._ZN8std_msgs4Time6getMD5Ev             0x08003c0c   Section        0  mainpp.o(i._ZN8std_msgs4Time6getMD5Ev)
+    i._ZN8std_msgs4Time7getTypeEv            0x08003c14   Section        0  mainpp.o(i._ZN8std_msgs4Time7getTypeEv)
+    i._ZN8std_msgs4TimeC1Ev                  0x08003c1c   Section        0  mainpp.o(i._ZN8std_msgs4TimeC1Ev)
+    i._ZN9riki_msgs10Velocities6getMD5Ev     0x08003c2c   Section        0  mainpp.o(i._ZN9riki_msgs10Velocities6getMD5Ev)
+    i._ZN9riki_msgs10Velocities7getTypeEv    0x08003c34   Section        0  mainpp.o(i._ZN9riki_msgs10Velocities7getTypeEv)
+    i._ZN9riki_msgs3Imu6getMD5Ev             0x08003c3c   Section        0  mainpp.o(i._ZN9riki_msgs3Imu6getMD5Ev)
+    i._ZN9riki_msgs3Imu7getTypeEv            0x08003c44   Section        0  mainpp.o(i._ZN9riki_msgs3Imu7getTypeEv)
+    i._ZN9riki_msgs3PID11deserializeEPh      0x08003c4c   Section        0  mainpp.o(i._ZN9riki_msgs3PID11deserializeEPh)
+    i._ZN9riki_msgs3PID6getMD5Ev             0x08003c98   Section        0  mainpp.o(i._ZN9riki_msgs3PID6getMD5Ev)
+    i._ZN9riki_msgs3PID7getTypeEv            0x08003ca0   Section        0  mainpp.o(i._ZN9riki_msgs3PID7getTypeEv)
+    i._ZNK13geometry_msgs5Twist9serializeEPh 0x08003ca8   Section        0  mainpp.o(i._ZNK13geometry_msgs5Twist9serializeEPh)
+    i._ZNK13geometry_msgs7Vector39serializeEPh 0x08003cc4   Section        0  mainpp.o(i._ZNK13geometry_msgs7Vector39serializeEPh)
+    i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh 0x08003d8e   Section        0  mainpp.o(i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh)
+    i._ZNK14rosserial_msgs3Log9serializeEPh  0x08003e4a   Section        0  mainpp.o(i._ZNK14rosserial_msgs3Log9serializeEPh)
+    i._ZNK14rosserial_msgs9TopicInfo9serializeEPh 0x08003e6e   Section        0  mainpp.o(i._ZNK14rosserial_msgs9TopicInfo9serializeEPh)
+    i._ZNK8std_msgs4Time9serializeEPh        0x08003ee4   Section        0  mainpp.o(i._ZNK8std_msgs4Time9serializeEPh)
+    i._ZNK9riki_msgs10Velocities9serializeEPh 0x08003f16   Section        0  mainpp.o(i._ZNK9riki_msgs10Velocities9serializeEPh)
+    i._ZNK9riki_msgs3Imu9serializeEPh        0x08003f50   Section        0  mainpp.o(i._ZNK9riki_msgs3Imu9serializeEPh)
+    i._ZNK9riki_msgs3PID9serializeEPh        0x08003f78   Section        0  mainpp.o(i._ZNK9riki_msgs3PID9serializeEPh)
+    i.__0sprintf$4                           0x08003fb4   Section        0  printf4.o(i.__0sprintf$4)
+    i.__NVIC_SetPriority                     0x08003fdc   Section        0  stm32f4xx_hal_cortex.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x08003fdd   Thumb Code    32  stm32f4xx_hal_cortex.o(i.__NVIC_SetPriority)
+    i.__free$realloc                         0x08003ffc   Section        0  mallocr.o(i.__free$realloc)
+    i.__malloc$realloc                       0x08004058   Section        0  mallocr.o(i.__malloc$realloc)
+    i.__scatterload_copy                     0x080040a8   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080040b6   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080040b8   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.__sti___10_mainpp_cpp_3a322398         0x080040c8   Section        0  mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
+    __sti___10_mainpp_cpp_3a322398           0x080040c9   Thumb Code   404  mainpp.o(i.__sti___10_mainpp_cpp_3a322398)
+    i._printf_core                           0x080042cc   Section        0  printf4.o(i._printf_core)
+    _printf_core                             0x080042cd   Thumb Code   552  printf4.o(i._printf_core)
+    i._sputc                                 0x080044f8   Section        0  printf4.o(i._sputc)
+    _sputc                                   0x080044f9   Thumb Code    10  printf4.o(i._sputc)
+    i.internal_alloc                         0x08004504   Section        0  mallocr.o(i.internal_alloc)
+    internal_alloc                           0x08004505   Thumb Code    76  mallocr.o(i.internal_alloc)
+    i.loop                                   0x08004554   Section        0  mainpp.o(i.loop)
+    i.main                                   0x080045dc   Section        0  main.o(i.main)
+    i.realloc                                0x08004654   Section        0  mallocr.o(i.realloc)
+    i.setup                                  0x080046c0   Section        0  mainpp.o(i.setup)
+    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv 0x080047ac   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv)
+    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv 0x080047b4   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv)
+    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh 0x080047b8   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh)
+    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev 0x080047d0   Section        0  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev)
+    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv 0x080047d8   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv)
+    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv 0x080047e0   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv)
+    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh 0x080047e4   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh)
+    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev 0x080047fc   Section        0  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv 0x08004804   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv 0x080048c0   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc 0x080048e4   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE 0x08004900   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc 0x080049ec   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv 0x080049f4   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE 0x08004c90   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE)
+    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev 0x08004cbc   Section        0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev)
+    .constdata                               0x08004d48   Section       28  mainpp.o(.constdata)
+    rosserial_msgs::REQUESTPARAM             0x08004d48   Data          28  mainpp.o(.constdata)
+    .constdata                               0x08004d64   Section        8  stm32f4xx_hal_dma.o(.constdata)
+    flagBitshiftOffset                       0x08004d64   Data           8  stm32f4xx_hal_dma.o(.constdata)
+    .constdata                               0x08004d6c   Section       16  system_stm32f4xx.o(.constdata)
+    .constdata                               0x08004d7c   Section        8  system_stm32f4xx.o(.constdata)
+    .constdata                               0x08004d84   Section       16  motor.o(.constdata)
+    MOTOR_A_PIN                              0x08004d84   Data           4  motor.o(.constdata)
+    MOTOR_B_PIN                              0x08004d88   Data           4  motor.o(.constdata)
+    MOTOR_C_PIN                              0x08004d8c   Data           4  motor.o(.constdata)
+    MOTOR_PWM_PIN                            0x08004d90   Data           4  motor.o(.constdata)
+    .constdata__ZTV7TwoWire                  0x08004d94   Section       16  wire.o(.constdata__ZTV7TwoWire)
+    .constdata__ZTVN13geometry_msgs5TwistE   0x08004da4   Section       24  mainpp.o(.constdata__ZTVN13geometry_msgs5TwistE)
+    .constdata__ZTVN13geometry_msgs7Vector3E 0x08004dbc   Section       24  mainpp.o(.constdata__ZTVN13geometry_msgs7Vector3E)
+    .constdata__ZTVN14rosserial_msgs20RequestParamResponseE 0x08004dd4   Section       24  mainpp.o(.constdata__ZTVN14rosserial_msgs20RequestParamResponseE)
+    .constdata__ZTVN14rosserial_msgs3LogE    0x08004dec   Section       24  mainpp.o(.constdata__ZTVN14rosserial_msgs3LogE)
+    .constdata__ZTVN14rosserial_msgs9TopicInfoE 0x08004e04   Section       24  mainpp.o(.constdata__ZTVN14rosserial_msgs9TopicInfoE)
+    .constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE 0x08004e1c   Section       24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE)
+    .constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE 0x08004e34   Section       24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE)
+    .constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE 0x08004e4c   Section       20  mainpp.o(.constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE)
+    .constdata__ZTVN8std_msgs4TimeE          0x08004e60   Section       24  mainpp.o(.constdata__ZTVN8std_msgs4TimeE)
+    .constdata__ZTVN9riki_msgs10VelocitiesE  0x08004e78   Section       24  mainpp.o(.constdata__ZTVN9riki_msgs10VelocitiesE)
+    .constdata__ZTVN9riki_msgs3ImuE          0x08004e90   Section       24  mainpp.o(.constdata__ZTVN9riki_msgs3ImuE)
+    .constdata__ZTVN9riki_msgs3PIDE          0x08004ea8   Section       24  mainpp.o(.constdata__ZTVN9riki_msgs3PIDE)
+    .constdata__ZZN13geometry_msgs5Twist6getMD5EvEs 0x08004ec0   Section       33  mainpp.o(.constdata__ZZN13geometry_msgs5Twist6getMD5EvEs)
+    .constdata__ZZN13geometry_msgs5Twist7getTypeEvEs 0x08004ee1   Section       20  mainpp.o(.constdata__ZZN13geometry_msgs5Twist7getTypeEvEs)
+    .constdata__ZZN13geometry_msgs7Vector36getMD5EvEs 0x08004ef5   Section       33  mainpp.o(.constdata__ZZN13geometry_msgs7Vector36getMD5EvEs)
+    .constdata__ZZN13geometry_msgs7Vector37getTypeEvEs 0x08004f16   Section       22  mainpp.o(.constdata__ZZN13geometry_msgs7Vector37getTypeEvEs)
+    .constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs 0x08004f2c   Section       33  mainpp.o(.constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs)
+    .constdata__ZZN14rosserial_msgs3Log6getMD5EvEs 0x08004f4d   Section       33  mainpp.o(.constdata__ZZN14rosserial_msgs3Log6getMD5EvEs)
+    .constdata__ZZN14rosserial_msgs3Log7getTypeEvEs 0x08004f6e   Section       19  mainpp.o(.constdata__ZZN14rosserial_msgs3Log7getTypeEvEs)
+    .constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs 0x08004f81   Section       33  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs)
+    .constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs 0x08004fa2   Section       25  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs)
+    .constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs 0x08004fbb   Section       57  mainpp.o(.constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs)
+    .constdata__ZZN8std_msgs4Time6getMD5EvEs 0x08004ff4   Section       33  mainpp.o(.constdata__ZZN8std_msgs4Time6getMD5EvEs)
+    .constdata__ZZN8std_msgs4Time7getTypeEvEs 0x08005015   Section       14  mainpp.o(.constdata__ZZN8std_msgs4Time7getTypeEvEs)
+    .constdata__ZZN9riki_msgs10Velocities6getMD5EvEs 0x08005023   Section       33  mainpp.o(.constdata__ZZN9riki_msgs10Velocities6getMD5EvEs)
+    .constdata__ZZN9riki_msgs10Velocities7getTypeEvEs 0x08005044   Section       21  mainpp.o(.constdata__ZZN9riki_msgs10Velocities7getTypeEvEs)
+    .constdata__ZZN9riki_msgs3Imu6getMD5EvEs 0x08005059   Section       33  mainpp.o(.constdata__ZZN9riki_msgs3Imu6getMD5EvEs)
+    .constdata__ZZN9riki_msgs3Imu7getTypeEvEs 0x0800507a   Section       14  mainpp.o(.constdata__ZZN9riki_msgs3Imu7getTypeEvEs)
+    .constdata__ZZN9riki_msgs3PID6getMD5EvEs 0x08005088   Section       33  mainpp.o(.constdata__ZZN9riki_msgs3PID6getMD5EvEs)
+    .constdata__ZZN9riki_msgs3PID7getTypeEvEs 0x080050a9   Section       14  mainpp.o(.constdata__ZZN9riki_msgs3PID7getTypeEvEs)
+    .init_array                              0x080050d8   Section        4  mainpp.o(.init_array)
+    .init_array                              0x080050dc   Section        0  cpp_init.o(.init_array)
     .data                                    0x20000000   Section       40  mainpp.o(.data)
     previous_debug_time                      0x20000008   Data           4  mainpp.o(.data)
     previous_imu_time                        0x2000000c   Data           4  mainpp.o(.data)
@@ -2464,16 +2464,17 @@ Image Symbol Table
     .data                                    0x20000028   Section       12  stm32f4xx_hal.o(.data)
     .data                                    0x20000034   Section        4  system_stm32f4xx.o(.data)
     .data                                    0x20000038   Section        8  motor.o(.data)
-    .data                                    0x20000040   Section        4  mvars.o(.data)
-    .data                                    0x20000044   Section        4  mvars.o(.data)
-    .data                                    0x20000048   Section        4  cpp_dtor.o(.data)
-    ddtor_pointer                            0x20000048   Data           4  cpp_dtor.o(.data)
-    .data__ZZN13STM32Hardware5flushEvE5mutex 0x2000004c   Section        1  mainpp.o(.data__ZZN13STM32Hardware5flushEvE5mutex)
-    .bss                                     0x20000050   Section     4468  mainpp.o(.bss)
-    .bss                                     0x200011c4   Section      256  tim.o(.bss)
-    .bss                                     0x200012c4   Section      256  usart.o(.bss)
-    HEAP                                     0x200013c8   Section      512  startup_stm32f407xx.o(HEAP)
-    STACK                                    0x200015c8   Section     1024  startup_stm32f407xx.o(STACK)
+    .data                                    0x20000040   Section        8  encoder.o(.data)
+    .data                                    0x20000048   Section        4  mvars.o(.data)
+    .data                                    0x2000004c   Section        4  mvars.o(.data)
+    .data                                    0x20000050   Section        4  cpp_dtor.o(.data)
+    ddtor_pointer                            0x20000050   Data           4  cpp_dtor.o(.data)
+    .data__ZZN13STM32Hardware5flushEvE5mutex 0x20000054   Section        1  mainpp.o(.data__ZZN13STM32Hardware5flushEvE5mutex)
+    .bss                                     0x20000058   Section     4468  mainpp.o(.bss)
+    .bss                                     0x200011cc   Section      256  tim.o(.bss)
+    .bss                                     0x200012cc   Section      256  usart.o(.bss)
+    HEAP                                     0x200013d0   Section      512  startup_stm32f407xx.o(HEAP)
+    STACK                                    0x200015d0   Section     1024  startup_stm32f407xx.o(STACK)
 
     Global Symbols
 
@@ -2695,11 +2696,11 @@ Image Symbol Table
     HAL_TIM_Base_Start                       0x080015cd   Thumb Code    36  stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start)
     HAL_TIM_ConfigClockSource                0x080015f1   Thumb Code   214  stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource)
     HAL_TIM_Encoder_Init                     0x080016c7   Thumb Code   152  stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Init)
-    HAL_TIM_Encoder_MspInit                  0x08001761   Thumb Code   176  tim.o(i.HAL_TIM_Encoder_MspInit)
-    HAL_TIM_Encoder_Start                    0x08001825   Thumb Code    52  stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start)
-    HAL_TIM_IC_CaptureCallback               0x08001859   Thumb Code     2  stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback)
-    HAL_TIM_IRQHandler                       0x0800185b   Thumb Code   358  stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler)
-    HAL_TIM_MspPostInit                      0x080019c1   Thumb Code    68  tim.o(i.HAL_TIM_MspPostInit)
+    HAL_TIM_Encoder_MspInit                  0x08001761   Thumb Code   172  tim.o(i.HAL_TIM_Encoder_MspInit)
+    HAL_TIM_Encoder_Start                    0x08001821   Thumb Code    52  stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start)
+    HAL_TIM_IC_CaptureCallback               0x08001855   Thumb Code     2  stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback)
+    HAL_TIM_IRQHandler                       0x08001857   Thumb Code   358  stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler)
+    HAL_TIM_MspPostInit                      0x080019bd   Thumb Code    70  tim.o(i.HAL_TIM_MspPostInit)
     HAL_TIM_OC_DelayElapsedCallback          0x08001a11   Thumb Code     2  stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback)
     HAL_TIM_PWM_ConfigChannel                0x08001a13   Thumb Code   208  stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel)
     HAL_TIM_PWM_Init                         0x08001ae3   Thumb Code    54  stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Init)
@@ -2796,121 +2797,121 @@ Image Symbol Table
     Motor::Motor(Motor_TypeDef, unsigned, unsigned) 0x08003771   Thumb Code     8  motor.o(i._ZN5MotorC1E13Motor_TypeDefjj)
     Motor::Motor__sub_object(Motor_TypeDef, unsigned, unsigned) 0x08003771   Thumb Code     0  motor.o(i._ZN5MotorC1E13Motor_TypeDefjj)
     Encoder::init()                          0x08003779   Thumb Code     2  encoder.o(i._ZN7Encoder4initEv)
-    Encoder::read()                          0x0800377b   Thumb Code    24  encoder.o(i._ZN7Encoder4readEv)
-    Encoder::getRPM()                        0x08003795   Thumb Code   106  encoder.o(i._ZN7Encoder6getRPMEv)
-    Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned) 0x0800380d   Thumb Code    26  encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj)
-    Encoder::Encoder__sub_object(Encoder_TypeDef, unsigned, unsigned, unsigned) 0x0800380d   Thumb Code     0  encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj)
-    TwoWire::i2c_get_ack()                   0x08003827   Thumb Code    48  wire.o(i._ZN7TwoWire11i2c_get_ackEv)
-    TwoWire::i2c_send_ack()                  0x08003857   Thumb Code    30  wire.o(i._ZN7TwoWire12i2c_send_ackEv)
-    TwoWire::i2c_shift_in()                  0x08003875   Thumb Code    56  wire.o(i._ZN7TwoWire12i2c_shift_inEv)
-    TwoWire::i2c_send_nack()                 0x080038ad   Thumb Code    30  wire.o(i._ZN7TwoWire13i2c_send_nackEv)
-    TwoWire::i2c_shift_out(unsigned char)    0x080038cb   Thumb Code    62  wire.o(i._ZN7TwoWire13i2c_shift_outEh)
-    TwoWire::begin(unsigned char)            0x08003909   Thumb Code   108  wire.o(i._ZN7TwoWire5beginEh)
-    TwoWire::process()                       0x0800397d   Thumb Code   168  wire.o(i._ZN7TwoWire7processEv)
-    TwoWire::set_scl(bool)                   0x08003a25   Thumb Code    36  wire.o(i._ZN7TwoWire7set_sclEb)
-    TwoWire::set_sda(bool)                   0x08003a4d   Thumb Code    36  wire.o(i._ZN7TwoWire7set_sdaEb)
-    TwoWire::i2c_stop()                      0x08003a75   Thumb Code    30  wire.o(i._ZN7TwoWire8i2c_stopEv)
-    TwoWire::sda_read()                      0x08003a95   Thumb Code    20  wire.o(i._ZN7TwoWire8sda_readEv)
-    TwoWire::i2c_start()                     0x08003aad   Thumb Code    22  wire.o(i._ZN7TwoWire9i2c_startEv)
-    TwoWire::TwoWire(unsigned char)          0x08003ac5   Thumb Code    10  wire.o(i._ZN7TwoWireC1Eh)
-    TwoWire::TwoWire__sub_object(unsigned char) 0x08003ac5   Thumb Code     0  wire.o(i._ZN7TwoWireC1Eh)
-    TwoWire::~TwoWire()                      0x08003ad5   Thumb Code     2  wire.o(i._ZN7TwoWireD1Ev)
-    TwoWire::~TwoWire__sub_object()          0x08003ad5   Thumb Code     0  wire.o(i._ZN7TwoWireD1Ev)
-    WireBase::requestFrom(unsigned char, int) 0x08003ad7   Thumb Code    58  wirebase.o(i._ZN8WireBase11requestFromEhi)
-    WireBase::requestFrom(int, int)          0x08003b11   Thumb Code     6  wirebase.o(i._ZN8WireBase11requestFromEii)
-    WireBase::endTransmission()              0x08003b17   Thumb Code    32  wirebase.o(i._ZN8WireBase15endTransmissionEv)
-    WireBase::beginTransmission(unsigned char) 0x08003b37   Thumb Code    22  wirebase.o(i._ZN8WireBase17beginTransmissionEh)
-    WireBase::beginTransmission(int)         0x08003b4d   Thumb Code     6  wirebase.o(i._ZN8WireBase17beginTransmissionEi)
-    WireBase::read()                         0x08003b53   Thumb Code    58  wirebase.o(i._ZN8WireBase4readEv)
-    WireBase::write(unsigned char)           0x08003b8d   Thumb Code    40  wirebase.o(i._ZN8WireBase5writeEh)
-    WireBase::available()                    0x08003bb5   Thumb Code    14  wirebase.o(i._ZN8WireBase9availableEv)
-    std_msgs::Time::deserialize(unsigned char*) 0x08003bc3   Thumb Code    62  mainpp.o(i._ZN8std_msgs4Time11deserializeEPh)
-    std_msgs::Time::getMD5()                 0x08003c01   Thumb Code     4  mainpp.o(i._ZN8std_msgs4Time6getMD5Ev)
-    std_msgs::Time::getType()                0x08003c09   Thumb Code     4  mainpp.o(i._ZN8std_msgs4Time7getTypeEv)
-    std_msgs::Time::Time()                   0x08003c11   Thumb Code    12  mainpp.o(i._ZN8std_msgs4TimeC1Ev)
-    std_msgs::Time::Time__sub_object()       0x08003c11   Thumb Code     0  mainpp.o(i._ZN8std_msgs4TimeC1Ev)
-    riki_msgs::Velocities::getMD5()          0x08003c21   Thumb Code     4  mainpp.o(i._ZN9riki_msgs10Velocities6getMD5Ev)
-    riki_msgs::Velocities::getType()         0x08003c29   Thumb Code     4  mainpp.o(i._ZN9riki_msgs10Velocities7getTypeEv)
-    riki_msgs::Imu::getMD5()                 0x08003c31   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3Imu6getMD5Ev)
-    riki_msgs::Imu::getType()                0x08003c39   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3Imu7getTypeEv)
-    riki_msgs::PID::deserialize(unsigned char*) 0x08003c41   Thumb Code    76  mainpp.o(i._ZN9riki_msgs3PID11deserializeEPh)
-    riki_msgs::PID::getMD5()                 0x08003c8d   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3PID6getMD5Ev)
-    riki_msgs::PID::getType()                0x08003c95   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3PID7getTypeEv)
-    geometry_msgs::Twist::serialize(unsigned char*) const 0x08003c9d   Thumb Code    28  mainpp.o(i._ZNK13geometry_msgs5Twist9serializeEPh)
-    geometry_msgs::Vector3::serialize(unsigned char*) const 0x08003cb9   Thumb Code   202  mainpp.o(i._ZNK13geometry_msgs7Vector39serializeEPh)
-    rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const 0x08003d83   Thumb Code   188  mainpp.o(i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh)
-    rosserial_msgs::Log::serialize(unsigned char*) const 0x08003e3f   Thumb Code    36  mainpp.o(i._ZNK14rosserial_msgs3Log9serializeEPh)
-    rosserial_msgs::TopicInfo::serialize(unsigned char*) const 0x08003e63   Thumb Code   118  mainpp.o(i._ZNK14rosserial_msgs9TopicInfo9serializeEPh)
-    std_msgs::Time::serialize(unsigned char*) const 0x08003ed9   Thumb Code    50  mainpp.o(i._ZNK8std_msgs4Time9serializeEPh)
-    riki_msgs::Velocities::serialize(unsigned char*) const 0x08003f0b   Thumb Code    58  mainpp.o(i._ZNK9riki_msgs10Velocities9serializeEPh)
-    riki_msgs::Imu::serialize(unsigned char*) const 0x08003f45   Thumb Code    40  mainpp.o(i._ZNK9riki_msgs3Imu9serializeEPh)
-    riki_msgs::PID::serialize(unsigned char*) const 0x08003f6d   Thumb Code    58  mainpp.o(i._ZNK9riki_msgs3PID9serializeEPh)
-    __0sprintf$4                             0x08003fa9   Thumb Code    34  printf4.o(i.__0sprintf$4)
-    __1sprintf$4                             0x08003fa9   Thumb Code     0  printf4.o(i.__0sprintf$4)
-    __2sprintf                               0x08003fa9   Thumb Code     0  printf4.o(i.__0sprintf$4)
-    free                                     0x08003ff1   Thumb Code    88  mallocr.o(i.__free$realloc)
-    malloc                                   0x0800404d   Thumb Code    64  mallocr.o(i.__malloc$realloc)
-    __scatterload_copy                       0x0800409d   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080040ab   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080040ad   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    loop                                     0x08004549   Thumb Code   128  mainpp.o(i.loop)
-    main                                     0x080045d1   Thumb Code   102  main.o(i.main)
-    realloc                                  0x08004649   Thumb Code   102  mallocr.o(i.realloc)
-    setup                                    0x080046b5   Thumb Code   204  mainpp.o(i.setup)
-    ros::Subscriber<geometry_msgs::Twist>::getMsgType() 0x080047a1   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv)
-    ros::Subscriber<geometry_msgs::Twist>::getEndpointType() 0x080047a9   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv)
-    ros::Subscriber<geometry_msgs::Twist>::callback(unsigned char*) 0x080047ad   Thumb Code    22  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh)
-    ros::Subscriber<geometry_msgs::Twist>::getMsgMD5() 0x080047c5   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev)
-    ros::Subscriber<riki_msgs::PID>::getMsgType() 0x080047cd   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv)
-    ros::Subscriber<riki_msgs::PID>::getEndpointType() 0x080047d5   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv)
-    ros::Subscriber<riki_msgs::PID>::callback(unsigned char*) 0x080047d9   Thumb Code    22  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh)
-    ros::Subscriber<riki_msgs::PID>::getMsgMD5() 0x080047f1   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::negotiateTopics() 0x080047f9   Thumb Code   184  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::requestSyncTime() 0x080048b5   Thumb Code    34  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::log(char, const char*) 0x080048d9   Thumb Code    24  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::publish(int, const ros::Msg*) 0x080048f5   Thumb Code   232  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::logerror(const char*) 0x080049e1   Thumb Code     8  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::spinOnce() 0x080049e9   Thumb Code   656  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::advertise(ros::Publisher&) 0x08004c85   Thumb Code    42  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::NodeHandle_() 0x08004cb1   Thumb Code   124  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::NodeHandle___sub_object() 0x08004cb1   Thumb Code     0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev)
-    AHBPrescTable                            0x08004d60   Data          16  system_stm32f4xx.o(.constdata)
-    APBPrescTable                            0x08004d70   Data           8  system_stm32f4xx.o(.constdata)
-    vtable for TwoWire                       0x08004d88   Data          16  wire.o(.constdata__ZTV7TwoWire)
-    vtable for geometry_msgs::Twist          0x08004d98   Data          24  mainpp.o(.constdata__ZTVN13geometry_msgs5TwistE)
-    vtable for geometry_msgs::Vector3        0x08004db0   Data          24  mainpp.o(.constdata__ZTVN13geometry_msgs7Vector3E)
-    vtable for rosserial_msgs::RequestParamResponse 0x08004dc8   Data          24  mainpp.o(.constdata__ZTVN14rosserial_msgs20RequestParamResponseE)
-    vtable for rosserial_msgs::Log           0x08004de0   Data          24  mainpp.o(.constdata__ZTVN14rosserial_msgs3LogE)
-    vtable for rosserial_msgs::TopicInfo     0x08004df8   Data          24  mainpp.o(.constdata__ZTVN14rosserial_msgs9TopicInfoE)
-    vtable for ros::Subscriber<geometry_msgs::Twist> 0x08004e10   Data          24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE)
-    vtable for ros::Subscriber<riki_msgs::PID> 0x08004e28   Data          24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE)
-    vtable for ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512> 0x08004e40   Data          20  mainpp.o(.constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE)
-    vtable for std_msgs::Time                0x08004e54   Data          24  mainpp.o(.constdata__ZTVN8std_msgs4TimeE)
-    vtable for riki_msgs::Velocities         0x08004e6c   Data          24  mainpp.o(.constdata__ZTVN9riki_msgs10VelocitiesE)
-    vtable for riki_msgs::Imu                0x08004e84   Data          24  mainpp.o(.constdata__ZTVN9riki_msgs3ImuE)
-    vtable for riki_msgs::PID                0x08004e9c   Data          24  mainpp.o(.constdata__ZTVN9riki_msgs3PIDE)
-    geometry_msgs::Twist::getMD5()::string   0x08004eb4   Data          33  mainpp.o(.constdata__ZZN13geometry_msgs5Twist6getMD5EvEs)
-    geometry_msgs::Twist::getType()::string  0x08004ed5   Data          20  mainpp.o(.constdata__ZZN13geometry_msgs5Twist7getTypeEvEs)
-    geometry_msgs::Vector3::getMD5()::string 0x08004ee9   Data          33  mainpp.o(.constdata__ZZN13geometry_msgs7Vector36getMD5EvEs)
-    geometry_msgs::Vector3::getType()::string 0x08004f0a   Data          22  mainpp.o(.constdata__ZZN13geometry_msgs7Vector37getTypeEvEs)
-    rosserial_msgs::RequestParamResponse::getMD5()::string 0x08004f20   Data          33  mainpp.o(.constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs)
-    rosserial_msgs::Log::getMD5()::string    0x08004f41   Data          33  mainpp.o(.constdata__ZZN14rosserial_msgs3Log6getMD5EvEs)
-    rosserial_msgs::Log::getType()::string   0x08004f62   Data          19  mainpp.o(.constdata__ZZN14rosserial_msgs3Log7getTypeEvEs)
-    rosserial_msgs::TopicInfo::getMD5()::string 0x08004f75   Data          33  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs)
-    rosserial_msgs::TopicInfo::getType()::string 0x08004f96   Data          25  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs)
-    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::publish(int, const ros::Msg*)::string 0x08004faf   Data          57  mainpp.o(.constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs)
-    std_msgs::Time::getMD5()::string         0x08004fe8   Data          33  mainpp.o(.constdata__ZZN8std_msgs4Time6getMD5EvEs)
-    std_msgs::Time::getType()::string        0x08005009   Data          14  mainpp.o(.constdata__ZZN8std_msgs4Time7getTypeEvEs)
-    riki_msgs::Velocities::getMD5()::string  0x08005017   Data          33  mainpp.o(.constdata__ZZN9riki_msgs10Velocities6getMD5EvEs)
-    riki_msgs::Velocities::getType()::string 0x08005038   Data          21  mainpp.o(.constdata__ZZN9riki_msgs10Velocities7getTypeEvEs)
-    riki_msgs::Imu::getMD5()::string         0x0800504d   Data          33  mainpp.o(.constdata__ZZN9riki_msgs3Imu6getMD5EvEs)
-    riki_msgs::Imu::getType()::string        0x0800506e   Data          14  mainpp.o(.constdata__ZZN9riki_msgs3Imu7getTypeEvEs)
-    riki_msgs::PID::getMD5()::string         0x0800507c   Data          33  mainpp.o(.constdata__ZZN9riki_msgs3PID6getMD5EvEs)
-    riki_msgs::PID::getType()::string        0x0800509d   Data          14  mainpp.o(.constdata__ZZN9riki_msgs3PID7getTypeEvEs)
-    Region$$Table$$Base                      0x080050ac   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080050cc   Number         0  anon$$obj.o(Region$$Table)
-    SHT$$INIT_ARRAY$$Base                    0x080050cc   Number         0  mainpp.o(.init_array)
-    SHT$$INIT_ARRAY$$Limit                   0x080050d0   Number         0  cpp_init.o(.init_array)
+    Encoder::read()                          0x0800377d   Thumb Code    30  encoder.o(i._ZN7Encoder4readEv)
+    Encoder::getRPM()                        0x080037a1   Thumb Code   106  encoder.o(i._ZN7Encoder6getRPMEv)
+    Encoder::Encoder(Encoder_TypeDef, unsigned, unsigned, unsigned) 0x08003819   Thumb Code    26  encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj)
+    Encoder::Encoder__sub_object(Encoder_TypeDef, unsigned, unsigned, unsigned) 0x08003819   Thumb Code     0  encoder.o(i._ZN7EncoderC1E15Encoder_TypeDefjjj)
+    TwoWire::i2c_get_ack()                   0x08003833   Thumb Code    48  wire.o(i._ZN7TwoWire11i2c_get_ackEv)
+    TwoWire::i2c_send_ack()                  0x08003863   Thumb Code    30  wire.o(i._ZN7TwoWire12i2c_send_ackEv)
+    TwoWire::i2c_shift_in()                  0x08003881   Thumb Code    56  wire.o(i._ZN7TwoWire12i2c_shift_inEv)
+    TwoWire::i2c_send_nack()                 0x080038b9   Thumb Code    30  wire.o(i._ZN7TwoWire13i2c_send_nackEv)
+    TwoWire::i2c_shift_out(unsigned char)    0x080038d7   Thumb Code    62  wire.o(i._ZN7TwoWire13i2c_shift_outEh)
+    TwoWire::begin(unsigned char)            0x08003915   Thumb Code   108  wire.o(i._ZN7TwoWire5beginEh)
+    TwoWire::process()                       0x08003989   Thumb Code   168  wire.o(i._ZN7TwoWire7processEv)
+    TwoWire::set_scl(bool)                   0x08003a31   Thumb Code    36  wire.o(i._ZN7TwoWire7set_sclEb)
+    TwoWire::set_sda(bool)                   0x08003a59   Thumb Code    36  wire.o(i._ZN7TwoWire7set_sdaEb)
+    TwoWire::i2c_stop()                      0x08003a81   Thumb Code    30  wire.o(i._ZN7TwoWire8i2c_stopEv)
+    TwoWire::sda_read()                      0x08003aa1   Thumb Code    20  wire.o(i._ZN7TwoWire8sda_readEv)
+    TwoWire::i2c_start()                     0x08003ab9   Thumb Code    22  wire.o(i._ZN7TwoWire9i2c_startEv)
+    TwoWire::TwoWire(unsigned char)          0x08003ad1   Thumb Code    10  wire.o(i._ZN7TwoWireC1Eh)
+    TwoWire::TwoWire__sub_object(unsigned char) 0x08003ad1   Thumb Code     0  wire.o(i._ZN7TwoWireC1Eh)
+    TwoWire::~TwoWire()                      0x08003ae1   Thumb Code     2  wire.o(i._ZN7TwoWireD1Ev)
+    TwoWire::~TwoWire__sub_object()          0x08003ae1   Thumb Code     0  wire.o(i._ZN7TwoWireD1Ev)
+    WireBase::requestFrom(unsigned char, int) 0x08003ae3   Thumb Code    58  wirebase.o(i._ZN8WireBase11requestFromEhi)
+    WireBase::requestFrom(int, int)          0x08003b1d   Thumb Code     6  wirebase.o(i._ZN8WireBase11requestFromEii)
+    WireBase::endTransmission()              0x08003b23   Thumb Code    32  wirebase.o(i._ZN8WireBase15endTransmissionEv)
+    WireBase::beginTransmission(unsigned char) 0x08003b43   Thumb Code    22  wirebase.o(i._ZN8WireBase17beginTransmissionEh)
+    WireBase::beginTransmission(int)         0x08003b59   Thumb Code     6  wirebase.o(i._ZN8WireBase17beginTransmissionEi)
+    WireBase::read()                         0x08003b5f   Thumb Code    58  wirebase.o(i._ZN8WireBase4readEv)
+    WireBase::write(unsigned char)           0x08003b99   Thumb Code    40  wirebase.o(i._ZN8WireBase5writeEh)
+    WireBase::available()                    0x08003bc1   Thumb Code    14  wirebase.o(i._ZN8WireBase9availableEv)
+    std_msgs::Time::deserialize(unsigned char*) 0x08003bcf   Thumb Code    62  mainpp.o(i._ZN8std_msgs4Time11deserializeEPh)
+    std_msgs::Time::getMD5()                 0x08003c0d   Thumb Code     4  mainpp.o(i._ZN8std_msgs4Time6getMD5Ev)
+    std_msgs::Time::getType()                0x08003c15   Thumb Code     4  mainpp.o(i._ZN8std_msgs4Time7getTypeEv)
+    std_msgs::Time::Time()                   0x08003c1d   Thumb Code    12  mainpp.o(i._ZN8std_msgs4TimeC1Ev)
+    std_msgs::Time::Time__sub_object()       0x08003c1d   Thumb Code     0  mainpp.o(i._ZN8std_msgs4TimeC1Ev)
+    riki_msgs::Velocities::getMD5()          0x08003c2d   Thumb Code     4  mainpp.o(i._ZN9riki_msgs10Velocities6getMD5Ev)
+    riki_msgs::Velocities::getType()         0x08003c35   Thumb Code     4  mainpp.o(i._ZN9riki_msgs10Velocities7getTypeEv)
+    riki_msgs::Imu::getMD5()                 0x08003c3d   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3Imu6getMD5Ev)
+    riki_msgs::Imu::getType()                0x08003c45   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3Imu7getTypeEv)
+    riki_msgs::PID::deserialize(unsigned char*) 0x08003c4d   Thumb Code    76  mainpp.o(i._ZN9riki_msgs3PID11deserializeEPh)
+    riki_msgs::PID::getMD5()                 0x08003c99   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3PID6getMD5Ev)
+    riki_msgs::PID::getType()                0x08003ca1   Thumb Code     4  mainpp.o(i._ZN9riki_msgs3PID7getTypeEv)
+    geometry_msgs::Twist::serialize(unsigned char*) const 0x08003ca9   Thumb Code    28  mainpp.o(i._ZNK13geometry_msgs5Twist9serializeEPh)
+    geometry_msgs::Vector3::serialize(unsigned char*) const 0x08003cc5   Thumb Code   202  mainpp.o(i._ZNK13geometry_msgs7Vector39serializeEPh)
+    rosserial_msgs::RequestParamResponse::serialize(unsigned char*) const 0x08003d8f   Thumb Code   188  mainpp.o(i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh)
+    rosserial_msgs::Log::serialize(unsigned char*) const 0x08003e4b   Thumb Code    36  mainpp.o(i._ZNK14rosserial_msgs3Log9serializeEPh)
+    rosserial_msgs::TopicInfo::serialize(unsigned char*) const 0x08003e6f   Thumb Code   118  mainpp.o(i._ZNK14rosserial_msgs9TopicInfo9serializeEPh)
+    std_msgs::Time::serialize(unsigned char*) const 0x08003ee5   Thumb Code    50  mainpp.o(i._ZNK8std_msgs4Time9serializeEPh)
+    riki_msgs::Velocities::serialize(unsigned char*) const 0x08003f17   Thumb Code    58  mainpp.o(i._ZNK9riki_msgs10Velocities9serializeEPh)
+    riki_msgs::Imu::serialize(unsigned char*) const 0x08003f51   Thumb Code    40  mainpp.o(i._ZNK9riki_msgs3Imu9serializeEPh)
+    riki_msgs::PID::serialize(unsigned char*) const 0x08003f79   Thumb Code    58  mainpp.o(i._ZNK9riki_msgs3PID9serializeEPh)
+    __0sprintf$4                             0x08003fb5   Thumb Code    34  printf4.o(i.__0sprintf$4)
+    __1sprintf$4                             0x08003fb5   Thumb Code     0  printf4.o(i.__0sprintf$4)
+    __2sprintf                               0x08003fb5   Thumb Code     0  printf4.o(i.__0sprintf$4)
+    free                                     0x08003ffd   Thumb Code    88  mallocr.o(i.__free$realloc)
+    malloc                                   0x08004059   Thumb Code    64  mallocr.o(i.__malloc$realloc)
+    __scatterload_copy                       0x080040a9   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080040b7   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080040b9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    loop                                     0x08004555   Thumb Code   128  mainpp.o(i.loop)
+    main                                     0x080045dd   Thumb Code   102  main.o(i.main)
+    realloc                                  0x08004655   Thumb Code   102  mallocr.o(i.realloc)
+    setup                                    0x080046c1   Thumb Code   204  mainpp.o(i.setup)
+    ros::Subscriber<geometry_msgs::Twist>::getMsgType() 0x080047ad   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv)
+    ros::Subscriber<geometry_msgs::Twist>::getEndpointType() 0x080047b5   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv)
+    ros::Subscriber<geometry_msgs::Twist>::callback(unsigned char*) 0x080047b9   Thumb Code    22  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh)
+    ros::Subscriber<geometry_msgs::Twist>::getMsgMD5() 0x080047d1   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev)
+    ros::Subscriber<riki_msgs::PID>::getMsgType() 0x080047d9   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv)
+    ros::Subscriber<riki_msgs::PID>::getEndpointType() 0x080047e1   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv)
+    ros::Subscriber<riki_msgs::PID>::callback(unsigned char*) 0x080047e5   Thumb Code    22  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh)
+    ros::Subscriber<riki_msgs::PID>::getMsgMD5() 0x080047fd   Thumb Code     4  mainpp.o(t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::negotiateTopics() 0x08004805   Thumb Code   184  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::requestSyncTime() 0x080048c1   Thumb Code    34  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::log(char, const char*) 0x080048e5   Thumb Code    24  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::publish(int, const ros::Msg*) 0x08004901   Thumb Code   232  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::logerror(const char*) 0x080049ed   Thumb Code     8  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::spinOnce() 0x080049f5   Thumb Code   656  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::advertise(ros::Publisher&) 0x08004c91   Thumb Code    42  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::NodeHandle_() 0x08004cbd   Thumb Code   124  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::NodeHandle___sub_object() 0x08004cbd   Thumb Code     0  mainpp.o(t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev)
+    AHBPrescTable                            0x08004d6c   Data          16  system_stm32f4xx.o(.constdata)
+    APBPrescTable                            0x08004d7c   Data           8  system_stm32f4xx.o(.constdata)
+    vtable for TwoWire                       0x08004d94   Data          16  wire.o(.constdata__ZTV7TwoWire)
+    vtable for geometry_msgs::Twist          0x08004da4   Data          24  mainpp.o(.constdata__ZTVN13geometry_msgs5TwistE)
+    vtable for geometry_msgs::Vector3        0x08004dbc   Data          24  mainpp.o(.constdata__ZTVN13geometry_msgs7Vector3E)
+    vtable for rosserial_msgs::RequestParamResponse 0x08004dd4   Data          24  mainpp.o(.constdata__ZTVN14rosserial_msgs20RequestParamResponseE)
+    vtable for rosserial_msgs::Log           0x08004dec   Data          24  mainpp.o(.constdata__ZTVN14rosserial_msgs3LogE)
+    vtable for rosserial_msgs::TopicInfo     0x08004e04   Data          24  mainpp.o(.constdata__ZTVN14rosserial_msgs9TopicInfoE)
+    vtable for ros::Subscriber<geometry_msgs::Twist> 0x08004e1c   Data          24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE)
+    vtable for ros::Subscriber<riki_msgs::PID> 0x08004e34   Data          24  mainpp.o(.constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE)
+    vtable for ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512> 0x08004e4c   Data          20  mainpp.o(.constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE)
+    vtable for std_msgs::Time                0x08004e60   Data          24  mainpp.o(.constdata__ZTVN8std_msgs4TimeE)
+    vtable for riki_msgs::Velocities         0x08004e78   Data          24  mainpp.o(.constdata__ZTVN9riki_msgs10VelocitiesE)
+    vtable for riki_msgs::Imu                0x08004e90   Data          24  mainpp.o(.constdata__ZTVN9riki_msgs3ImuE)
+    vtable for riki_msgs::PID                0x08004ea8   Data          24  mainpp.o(.constdata__ZTVN9riki_msgs3PIDE)
+    geometry_msgs::Twist::getMD5()::string   0x08004ec0   Data          33  mainpp.o(.constdata__ZZN13geometry_msgs5Twist6getMD5EvEs)
+    geometry_msgs::Twist::getType()::string  0x08004ee1   Data          20  mainpp.o(.constdata__ZZN13geometry_msgs5Twist7getTypeEvEs)
+    geometry_msgs::Vector3::getMD5()::string 0x08004ef5   Data          33  mainpp.o(.constdata__ZZN13geometry_msgs7Vector36getMD5EvEs)
+    geometry_msgs::Vector3::getType()::string 0x08004f16   Data          22  mainpp.o(.constdata__ZZN13geometry_msgs7Vector37getTypeEvEs)
+    rosserial_msgs::RequestParamResponse::getMD5()::string 0x08004f2c   Data          33  mainpp.o(.constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs)
+    rosserial_msgs::Log::getMD5()::string    0x08004f4d   Data          33  mainpp.o(.constdata__ZZN14rosserial_msgs3Log6getMD5EvEs)
+    rosserial_msgs::Log::getType()::string   0x08004f6e   Data          19  mainpp.o(.constdata__ZZN14rosserial_msgs3Log7getTypeEvEs)
+    rosserial_msgs::TopicInfo::getMD5()::string 0x08004f81   Data          33  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs)
+    rosserial_msgs::TopicInfo::getType()::string 0x08004fa2   Data          25  mainpp.o(.constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs)
+    ros::NodeHandle_<STM32Hardware, (int)25, (int)25, (int)512, (int)512>::publish(int, const ros::Msg*)::string 0x08004fbb   Data          57  mainpp.o(.constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs)
+    std_msgs::Time::getMD5()::string         0x08004ff4   Data          33  mainpp.o(.constdata__ZZN8std_msgs4Time6getMD5EvEs)
+    std_msgs::Time::getType()::string        0x08005015   Data          14  mainpp.o(.constdata__ZZN8std_msgs4Time7getTypeEvEs)
+    riki_msgs::Velocities::getMD5()::string  0x08005023   Data          33  mainpp.o(.constdata__ZZN9riki_msgs10Velocities6getMD5EvEs)
+    riki_msgs::Velocities::getType()::string 0x08005044   Data          21  mainpp.o(.constdata__ZZN9riki_msgs10Velocities7getTypeEvEs)
+    riki_msgs::Imu::getMD5()::string         0x08005059   Data          33  mainpp.o(.constdata__ZZN9riki_msgs3Imu6getMD5EvEs)
+    riki_msgs::Imu::getType()::string        0x0800507a   Data          14  mainpp.o(.constdata__ZZN9riki_msgs3Imu7getTypeEvEs)
+    riki_msgs::PID::getMD5()::string         0x08005088   Data          33  mainpp.o(.constdata__ZZN9riki_msgs3PID6getMD5EvEs)
+    riki_msgs::PID::getType()::string        0x080050a9   Data          14  mainpp.o(.constdata__ZZN9riki_msgs3PID7getTypeEvEs)
+    Region$$Table$$Base                      0x080050b8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080050d8   Number         0  anon$$obj.o(Region$$Table)
+    SHT$$INIT_ARRAY$$Base                    0x080050d8   Number         0  mainpp.o(.init_array)
+    SHT$$INIT_ARRAY$$Limit                   0x080050dc   Number         0  cpp_init.o(.init_array)
     is_first                                 0x20000000   Data           1  mainpp.o(.data)
     accel                                    0x20000001   Data           1  mainpp.o(.data)
     gyro                                     0x20000002   Data           1  mainpp.o(.data)
@@ -2923,34 +2924,35 @@ Image Symbol Table
     uwTick                                   0x20000030   Data           4  stm32f4xx_hal.o(.data)
     SystemCoreClock                          0x20000034   Data           4  system_stm32f4xx.o(.data)
     MOTOR_PWM_PORT                           0x20000038   Data           8  motor.o(.data)
-    __microlib_freelist                      0x20000040   Data           4  mvars.o(.data)
-    __microlib_freelist_initialised          0x20000044   Data           4  mvars.o(.data)
-    STM32Hardware::flush()::mutex            0x2000004c   Data           1  mainpp.o(.data__ZZN13STM32Hardware5flushEvE5mutex)
-    motor1_pid                               0x20000050   Data          48  mainpp.o(.bss)
-    motor2_pid                               0x20000080   Data          48  mainpp.o(.bss)
-    motor1                                   0x200000b0   Data          16  mainpp.o(.bss)
-    motor2                                   0x200000c0   Data          16  mainpp.o(.bss)
-    encoder1                                 0x200000d0   Data          32  mainpp.o(.bss)
-    encoder2                                 0x200000f0   Data          32  mainpp.o(.bss)
-    kinematics                               0x20000110   Data          20  mainpp.o(.bss)
-    imu                                      0x20000124   Data         156  mainpp.o(.bss)
-    nh                                       0x200001c0   Data        3900  mainpp.o(.bss)
-    raw_imu_msg                              0x200010fc   Data          52  mainpp.o(.bss)
-    raw_vel_msg                              0x20001130   Data          16  mainpp.o(.bss)
-    cmd_sub                                  0x20001140   Data          56  mainpp.o(.bss)
-    pid_sub                                  0x20001178   Data          36  mainpp.o(.bss)
-    raw_vel_pub                              0x2000119c   Data          20  mainpp.o(.bss)
-    raw_imu_pub                              0x200011b0   Data          20  mainpp.o(.bss)
-    htim2                                    0x200011c4   Data          64  tim.o(.bss)
-    htim3                                    0x20001204   Data          64  tim.o(.bss)
-    htim4                                    0x20001244   Data          64  tim.o(.bss)
-    htim5                                    0x20001284   Data          64  tim.o(.bss)
-    huart1                                   0x200012c4   Data          64  usart.o(.bss)
-    hdma_usart1_rx                           0x20001304   Data          96  usart.o(.bss)
-    hdma_usart1_tx                           0x20001364   Data          96  usart.o(.bss)
-    __heap_base                              0x200013c8   Data           0  startup_stm32f407xx.o(HEAP)
-    __heap_limit                             0x200015c8   Data           0  startup_stm32f407xx.o(HEAP)
-    __initial_sp                             0x200019c8   Data           0  startup_stm32f407xx.o(STACK)
+    ENCODER_TIM                              0x20000040   Data           8  encoder.o(.data)
+    __microlib_freelist                      0x20000048   Data           4  mvars.o(.data)
+    __microlib_freelist_initialised          0x2000004c   Data           4  mvars.o(.data)
+    STM32Hardware::flush()::mutex            0x20000054   Data           1  mainpp.o(.data__ZZN13STM32Hardware5flushEvE5mutex)
+    motor1_pid                               0x20000058   Data          48  mainpp.o(.bss)
+    motor2_pid                               0x20000088   Data          48  mainpp.o(.bss)
+    motor1                                   0x200000b8   Data          16  mainpp.o(.bss)
+    motor2                                   0x200000c8   Data          16  mainpp.o(.bss)
+    encoder1                                 0x200000d8   Data          32  mainpp.o(.bss)
+    encoder2                                 0x200000f8   Data          32  mainpp.o(.bss)
+    kinematics                               0x20000118   Data          20  mainpp.o(.bss)
+    imu                                      0x2000012c   Data         156  mainpp.o(.bss)
+    nh                                       0x200001c8   Data        3900  mainpp.o(.bss)
+    raw_imu_msg                              0x20001104   Data          52  mainpp.o(.bss)
+    raw_vel_msg                              0x20001138   Data          16  mainpp.o(.bss)
+    cmd_sub                                  0x20001148   Data          56  mainpp.o(.bss)
+    pid_sub                                  0x20001180   Data          36  mainpp.o(.bss)
+    raw_vel_pub                              0x200011a4   Data          20  mainpp.o(.bss)
+    raw_imu_pub                              0x200011b8   Data          20  mainpp.o(.bss)
+    htim2                                    0x200011cc   Data          64  tim.o(.bss)
+    htim3                                    0x2000120c   Data          64  tim.o(.bss)
+    htim4                                    0x2000124c   Data          64  tim.o(.bss)
+    htim5                                    0x2000128c   Data          64  tim.o(.bss)
+    huart1                                   0x200012cc   Data          64  usart.o(.bss)
+    hdma_usart1_rx                           0x2000130c   Data          96  usart.o(.bss)
+    hdma_usart1_tx                           0x2000136c   Data          96  usart.o(.bss)
+    __heap_base                              0x200013d0   Data           0  startup_stm32f407xx.o(HEAP)
+    __heap_limit                             0x200015d0   Data           0  startup_stm32f407xx.o(HEAP)
+    __initial_sp                             0x200019d0   Data           0  startup_stm32f407xx.o(STACK)
 
 
 
@@ -2960,9 +2962,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00005120, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00005134, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000050d0, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000050dc, Max: 0x00100000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3047,11 +3049,11 @@ Memory Map of the image
     0x080015f0   0x000000d6   Code   RO         1356    i.HAL_TIM_ConfigClockSource  stm32f4xx_hal_tim.o
     0x080016c6   0x00000098   Code   RO         1365    i.HAL_TIM_Encoder_Init  stm32f4xx_hal_tim.o
     0x0800175e   0x00000002   PAD
-    0x08001760   0x000000c4   Code   RO         1092    i.HAL_TIM_Encoder_MspInit  tim.o
-    0x08001824   0x00000034   Code   RO         1368    i.HAL_TIM_Encoder_Start  stm32f4xx_hal_tim.o
-    0x08001858   0x00000002   Code   RO         1376    i.HAL_TIM_IC_CaptureCallback  stm32f4xx_hal_tim.o
-    0x0800185a   0x00000166   Code   RO         1390    i.HAL_TIM_IRQHandler  stm32f4xx_hal_tim.o
-    0x080019c0   0x00000050   Code   RO         1093    i.HAL_TIM_MspPostInit  tim.o
+    0x08001760   0x000000c0   Code   RO         1092    i.HAL_TIM_Encoder_MspInit  tim.o
+    0x08001820   0x00000034   Code   RO         1368    i.HAL_TIM_Encoder_Start  stm32f4xx_hal_tim.o
+    0x08001854   0x00000002   Code   RO         1376    i.HAL_TIM_IC_CaptureCallback  stm32f4xx_hal_tim.o
+    0x08001856   0x00000166   Code   RO         1390    i.HAL_TIM_IRQHandler  stm32f4xx_hal_tim.o
+    0x080019bc   0x00000054   Code   RO         1093    i.HAL_TIM_MspPostInit  tim.o
     0x08001a10   0x00000002   Code   RO         1393    i.HAL_TIM_OC_DelayElapsedCallback  stm32f4xx_hal_tim.o
     0x08001a12   0x000000d0   Code   RO         1414    i.HAL_TIM_PWM_ConfigChannel  stm32f4xx_hal_tim.o
     0x08001ae2   0x00000036   Code   RO         1417    i.HAL_TIM_PWM_Init  stm32f4xx_hal_tim.o
@@ -3172,135 +3174,135 @@ Memory Map of the image
     0x08003718   0x00000058   Code   RO         3873    i._ZN5Motor4spinEi  motor.o
     0x08003770   0x00000008   Code   RO         3874    i._ZN5MotorC1E13Motor_TypeDefjj  motor.o
     0x08003778   0x00000002   Code   RO         4057    i._ZN7Encoder4initEv  encoder.o
-    0x0800377a   0x00000018   Code   RO         4058    i._ZN7Encoder4readEv  encoder.o
-    0x08003792   0x00000002   PAD
-    0x08003794   0x00000078   Code   RO         4059    i._ZN7Encoder6getRPMEv  encoder.o
-    0x0800380c   0x0000001a   Code   RO         4061    i._ZN7EncoderC1E15Encoder_TypeDefjjj  encoder.o
-    0x08003826   0x00000030   Code   RO         4245    i._ZN7TwoWire11i2c_get_ackEv  wire.o
-    0x08003856   0x0000001e   Code   RO         4246    i._ZN7TwoWire12i2c_send_ackEv  wire.o
-    0x08003874   0x00000038   Code   RO         4247    i._ZN7TwoWire12i2c_shift_inEv  wire.o
-    0x080038ac   0x0000001e   Code   RO         4248    i._ZN7TwoWire13i2c_send_nackEv  wire.o
-    0x080038ca   0x0000003e   Code   RO         4249    i._ZN7TwoWire13i2c_shift_outEh  wire.o
-    0x08003908   0x00000074   Code   RO         4250    i._ZN7TwoWire5beginEh  wire.o
-    0x0800397c   0x000000a8   Code   RO         4251    i._ZN7TwoWire7processEv  wire.o
-    0x08003a24   0x00000028   Code   RO         4252    i._ZN7TwoWire7set_sclEb  wire.o
-    0x08003a4c   0x00000028   Code   RO         4253    i._ZN7TwoWire7set_sdaEb  wire.o
-    0x08003a74   0x0000001e   Code   RO         4254    i._ZN7TwoWire8i2c_stopEv  wire.o
-    0x08003a92   0x00000002   PAD
-    0x08003a94   0x00000018   Code   RO         4255    i._ZN7TwoWire8sda_readEv  wire.o
-    0x08003aac   0x00000016   Code   RO         4256    i._ZN7TwoWire9i2c_startEv  wire.o
-    0x08003ac2   0x00000002   PAD
-    0x08003ac4   0x00000010   Code   RO         4257    i._ZN7TwoWireC1Eh   wire.o
-    0x08003ad4   0x00000002   Code   RO         4258    i._ZN7TwoWireD1Ev   wire.o
-    0x08003ad6   0x0000003a   Code   RO         4143    i._ZN8WireBase11requestFromEhi  wirebase.o
-    0x08003b10   0x00000006   Code   RO         4144    i._ZN8WireBase11requestFromEii  wirebase.o
-    0x08003b16   0x00000020   Code   RO         4145    i._ZN8WireBase15endTransmissionEv  wirebase.o
-    0x08003b36   0x00000016   Code   RO         4146    i._ZN8WireBase17beginTransmissionEh  wirebase.o
-    0x08003b4c   0x00000006   Code   RO         4147    i._ZN8WireBase17beginTransmissionEi  wirebase.o
-    0x08003b52   0x0000003a   Code   RO         4148    i._ZN8WireBase4readEv  wirebase.o
-    0x08003b8c   0x00000028   Code   RO         4153    i._ZN8WireBase5writeEh  wirebase.o
-    0x08003bb4   0x0000000e   Code   RO         4155    i._ZN8WireBase9availableEv  wirebase.o
-    0x08003bc2   0x0000003e   Code   RO          213    i._ZN8std_msgs4Time11deserializeEPh  mainpp.o
-    0x08003c00   0x00000008   Code   RO          490    i._ZN8std_msgs4Time6getMD5Ev  mainpp.o
-    0x08003c08   0x00000008   Code   RO          484    i._ZN8std_msgs4Time7getTypeEv  mainpp.o
-    0x08003c10   0x00000010   Code   RO          279    i._ZN8std_msgs4TimeC1Ev  mainpp.o
-    0x08003c20   0x00000008   Code   RO          580    i._ZN9riki_msgs10Velocities6getMD5Ev  mainpp.o
-    0x08003c28   0x00000008   Code   RO          574    i._ZN9riki_msgs10Velocities7getTypeEv  mainpp.o
-    0x08003c30   0x00000008   Code   RO          610    i._ZN9riki_msgs3Imu6getMD5Ev  mainpp.o
-    0x08003c38   0x00000008   Code   RO          604    i._ZN9riki_msgs3Imu7getTypeEv  mainpp.o
-    0x08003c40   0x0000004c   Code   RO          232    i._ZN9riki_msgs3PID11deserializeEPh  mainpp.o
-    0x08003c8c   0x00000008   Code   RO          442    i._ZN9riki_msgs3PID6getMD5Ev  mainpp.o
-    0x08003c94   0x00000008   Code   RO          430    i._ZN9riki_msgs3PID7getTypeEv  mainpp.o
-    0x08003c9c   0x0000001c   Code   RO          472    i._ZNK13geometry_msgs5Twist9serializeEPh  mainpp.o
-    0x08003cb8   0x000000ca   Code   RO          238    i._ZNK13geometry_msgs7Vector39serializeEPh  mainpp.o
-    0x08003d82   0x000000bc   Code   RO          544    i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh  mainpp.o
-    0x08003e3e   0x00000024   Code   RO          520    i._ZNK14rosserial_msgs3Log9serializeEPh  mainpp.o
-    0x08003e62   0x00000076   Code   RO          496    i._ZNK14rosserial_msgs9TopicInfo9serializeEPh  mainpp.o
-    0x08003ed8   0x00000032   Code   RO          478    i._ZNK8std_msgs4Time9serializeEPh  mainpp.o
-    0x08003f0a   0x0000003a   Code   RO          562    i._ZNK9riki_msgs10Velocities9serializeEPh  mainpp.o
-    0x08003f44   0x00000028   Code   RO          592    i._ZNK9riki_msgs3Imu9serializeEPh  mainpp.o
-    0x08003f6c   0x0000003a   Code   RO          586    i._ZNK9riki_msgs3PID9serializeEPh  mainpp.o
-    0x08003fa6   0x00000002   PAD
-    0x08003fa8   0x00000028   Code   RO         4583    i.__0sprintf$4      mc_w.l(printf4.o)
-    0x08003fd0   0x00000020   Code   RO         3356    i.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
-    0x08003ff0   0x0000005c   Code   RO         4731    i.__free$realloc    mc_w.l(mallocr.o)
-    0x0800404c   0x00000050   Code   RO         4732    i.__malloc$realloc  mc_w.l(mallocr.o)
-    0x0800409c   0x0000000e   Code   RO         4869    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080040aa   0x00000002   Code   RO         4870    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080040ac   0x0000000e   Code   RO         4871    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080040ba   0x00000002   PAD
-    0x080040bc   0x00000204   Code   RO           95    i.__sti___10_mainpp_cpp_3a322398  mainpp.o
-    0x080042c0   0x0000022c   Code   RO         4588    i._printf_core      mc_w.l(printf4.o)
-    0x080044ec   0x0000000a   Code   RO         4590    i._sputc            mc_w.l(printf4.o)
-    0x080044f6   0x00000002   PAD
-    0x080044f8   0x00000050   Code   RO         4733    i.internal_alloc    mc_w.l(mallocr.o)
-    0x08004548   0x00000088   Code   RO           96    i.loop              mainpp.o
-    0x080045d0   0x00000078   Code   RO          894    i.main              main.o
-    0x08004648   0x0000006c   Code   RO         4734    i.realloc           mc_w.l(mallocr.o)
-    0x080046b4   0x000000ec   Code   RO           97    i.setup             mainpp.o
-    0x080047a0   0x00000008   Code   RO          400    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv  mainpp.o
-    0x080047a8   0x00000004   Code   RO          418    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv  mainpp.o
-    0x080047ac   0x00000016   Code   RO          388    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh  mainpp.o
-    0x080047c2   0x00000002   PAD
-    0x080047c4   0x00000008   Code   RO          412    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev  mainpp.o
-    0x080047cc   0x00000008   Code   RO          436    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv  mainpp.o
-    0x080047d4   0x00000004   Code   RO          454    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv  mainpp.o
-    0x080047d8   0x00000016   Code   RO          424    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh  mainpp.o
-    0x080047ee   0x00000002   PAD
-    0x080047f0   0x00000008   Code   RO          448    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev  mainpp.o
-    0x080047f8   0x000000bc   Code   RO          289    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv  mainpp.o
-    0x080048b4   0x00000022   Code   RO          282    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv  mainpp.o
-    0x080048d6   0x00000002   PAD
-    0x080048d8   0x0000001c   Code   RO          257    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc  mainpp.o
-    0x080048f4   0x000000ec   Code   RO          375    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE  mainpp.o
-    0x080049e0   0x00000008   Code   RO          264    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc  mainpp.o
-    0x080049e8   0x0000029c   Code   RO          219    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv  mainpp.o
-    0x08004c84   0x0000002a   Code   RO          296    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE  mainpp.o
-    0x08004cae   0x00000002   PAD
-    0x08004cb0   0x0000008c   Code   RO          308    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev  mainpp.o
-    0x08004d3c   0x0000001c   Data   RO          111    .constdata          mainpp.o
-    0x08004d58   0x00000008   Data   RO         3073    .constdata          stm32f4xx_hal_dma.o
-    0x08004d60   0x00000010   Data   RO         3730    .constdata          system_stm32f4xx.o
-    0x08004d70   0x00000008   Data   RO         3731    .constdata          system_stm32f4xx.o
-    0x08004d78   0x00000010   Data   RO         3879    .constdata          motor.o
-    0x08004d88   0x00000010   Data   RO         4342    .constdata__ZTV7TwoWire  wire.o
-    0x08004d98   0x00000018   Data   RO          327    .constdata__ZTVN13geometry_msgs5TwistE  mainpp.o
-    0x08004db0   0x00000018   Data   RO          315    .constdata__ZTVN13geometry_msgs7Vector3E  mainpp.o
-    0x08004dc8   0x00000018   Data   RO          323    .constdata__ZTVN14rosserial_msgs20RequestParamResponseE  mainpp.o
-    0x08004de0   0x00000018   Data   RO          321    .constdata__ZTVN14rosserial_msgs3LogE  mainpp.o
-    0x08004df8   0x00000018   Data   RO          319    .constdata__ZTVN14rosserial_msgs9TopicInfoE  mainpp.o
-    0x08004e10   0x00000018   Data   RO          335    .constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE  mainpp.o
-    0x08004e28   0x00000018   Data   RO          337    .constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE  mainpp.o
-    0x08004e40   0x00000014   Data   RO          333    .constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE  mainpp.o
-    0x08004e54   0x00000018   Data   RO          317    .constdata__ZTVN8std_msgs4TimeE  mainpp.o
-    0x08004e6c   0x00000018   Data   RO          325    .constdata__ZTVN9riki_msgs10VelocitiesE  mainpp.o
-    0x08004e84   0x00000018   Data   RO          331    .constdata__ZTVN9riki_msgs3ImuE  mainpp.o
-    0x08004e9c   0x00000018   Data   RO          329    .constdata__ZTVN9riki_msgs3PIDE  mainpp.o
-    0x08004eb4   0x00000021   Data   RO          195    .constdata__ZZN13geometry_msgs5Twist6getMD5EvEs  mainpp.o
-    0x08004ed5   0x00000014   Data   RO          194    .constdata__ZZN13geometry_msgs5Twist7getTypeEvEs  mainpp.o
-    0x08004ee9   0x00000021   Data   RO          184    .constdata__ZZN13geometry_msgs7Vector36getMD5EvEs  mainpp.o
-    0x08004f0a   0x00000016   Data   RO          183    .constdata__ZZN13geometry_msgs7Vector37getTypeEvEs  mainpp.o
-    0x08004f20   0x00000021   Data   RO          191    .constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs  mainpp.o
-    0x08004f41   0x00000021   Data   RO          190    .constdata__ZZN14rosserial_msgs3Log6getMD5EvEs  mainpp.o
-    0x08004f62   0x00000013   Data   RO          189    .constdata__ZZN14rosserial_msgs3Log7getTypeEvEs  mainpp.o
-    0x08004f75   0x00000021   Data   RO          188    .constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs  mainpp.o
-    0x08004f96   0x00000019   Data   RO          187    .constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs  mainpp.o
-    0x08004faf   0x00000039   Data   RO          200    .constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs  mainpp.o
-    0x08004fe8   0x00000021   Data   RO          186    .constdata__ZZN8std_msgs4Time6getMD5EvEs  mainpp.o
-    0x08005009   0x0000000e   Data   RO          185    .constdata__ZZN8std_msgs4Time7getTypeEvEs  mainpp.o
-    0x08005017   0x00000021   Data   RO          193    .constdata__ZZN9riki_msgs10Velocities6getMD5EvEs  mainpp.o
-    0x08005038   0x00000015   Data   RO          192    .constdata__ZZN9riki_msgs10Velocities7getTypeEvEs  mainpp.o
-    0x0800504d   0x00000021   Data   RO          199    .constdata__ZZN9riki_msgs3Imu6getMD5EvEs  mainpp.o
-    0x0800506e   0x0000000e   Data   RO          198    .constdata__ZZN9riki_msgs3Imu7getTypeEvEs  mainpp.o
-    0x0800507c   0x00000021   Data   RO          197    .constdata__ZZN9riki_msgs3PID6getMD5EvEs  mainpp.o
-    0x0800509d   0x0000000e   Data   RO          196    .constdata__ZZN9riki_msgs3PID7getTypeEvEs  mainpp.o
-    0x080050ab   0x00000001   PAD
-    0x080050ac   0x00000020   Data   RO         4867    Region$$Table       anon$$obj.o
-    0x080050cc   0x00000004   Data   RO          113    .init_array         mainpp.o
-    0x080050d0   0x00000000   Data   RO         4750    .init_array         mc_w.l(cpp_init.o)
+    0x0800377a   0x00000002   PAD
+    0x0800377c   0x00000024   Code   RO         4058    i._ZN7Encoder4readEv  encoder.o
+    0x080037a0   0x00000078   Code   RO         4059    i._ZN7Encoder6getRPMEv  encoder.o
+    0x08003818   0x0000001a   Code   RO         4061    i._ZN7EncoderC1E15Encoder_TypeDefjjj  encoder.o
+    0x08003832   0x00000030   Code   RO         4245    i._ZN7TwoWire11i2c_get_ackEv  wire.o
+    0x08003862   0x0000001e   Code   RO         4246    i._ZN7TwoWire12i2c_send_ackEv  wire.o
+    0x08003880   0x00000038   Code   RO         4247    i._ZN7TwoWire12i2c_shift_inEv  wire.o
+    0x080038b8   0x0000001e   Code   RO         4248    i._ZN7TwoWire13i2c_send_nackEv  wire.o
+    0x080038d6   0x0000003e   Code   RO         4249    i._ZN7TwoWire13i2c_shift_outEh  wire.o
+    0x08003914   0x00000074   Code   RO         4250    i._ZN7TwoWire5beginEh  wire.o
+    0x08003988   0x000000a8   Code   RO         4251    i._ZN7TwoWire7processEv  wire.o
+    0x08003a30   0x00000028   Code   RO         4252    i._ZN7TwoWire7set_sclEb  wire.o
+    0x08003a58   0x00000028   Code   RO         4253    i._ZN7TwoWire7set_sdaEb  wire.o
+    0x08003a80   0x0000001e   Code   RO         4254    i._ZN7TwoWire8i2c_stopEv  wire.o
+    0x08003a9e   0x00000002   PAD
+    0x08003aa0   0x00000018   Code   RO         4255    i._ZN7TwoWire8sda_readEv  wire.o
+    0x08003ab8   0x00000016   Code   RO         4256    i._ZN7TwoWire9i2c_startEv  wire.o
+    0x08003ace   0x00000002   PAD
+    0x08003ad0   0x00000010   Code   RO         4257    i._ZN7TwoWireC1Eh   wire.o
+    0x08003ae0   0x00000002   Code   RO         4258    i._ZN7TwoWireD1Ev   wire.o
+    0x08003ae2   0x0000003a   Code   RO         4143    i._ZN8WireBase11requestFromEhi  wirebase.o
+    0x08003b1c   0x00000006   Code   RO         4144    i._ZN8WireBase11requestFromEii  wirebase.o
+    0x08003b22   0x00000020   Code   RO         4145    i._ZN8WireBase15endTransmissionEv  wirebase.o
+    0x08003b42   0x00000016   Code   RO         4146    i._ZN8WireBase17beginTransmissionEh  wirebase.o
+    0x08003b58   0x00000006   Code   RO         4147    i._ZN8WireBase17beginTransmissionEi  wirebase.o
+    0x08003b5e   0x0000003a   Code   RO         4148    i._ZN8WireBase4readEv  wirebase.o
+    0x08003b98   0x00000028   Code   RO         4153    i._ZN8WireBase5writeEh  wirebase.o
+    0x08003bc0   0x0000000e   Code   RO         4155    i._ZN8WireBase9availableEv  wirebase.o
+    0x08003bce   0x0000003e   Code   RO          213    i._ZN8std_msgs4Time11deserializeEPh  mainpp.o
+    0x08003c0c   0x00000008   Code   RO          490    i._ZN8std_msgs4Time6getMD5Ev  mainpp.o
+    0x08003c14   0x00000008   Code   RO          484    i._ZN8std_msgs4Time7getTypeEv  mainpp.o
+    0x08003c1c   0x00000010   Code   RO          279    i._ZN8std_msgs4TimeC1Ev  mainpp.o
+    0x08003c2c   0x00000008   Code   RO          580    i._ZN9riki_msgs10Velocities6getMD5Ev  mainpp.o
+    0x08003c34   0x00000008   Code   RO          574    i._ZN9riki_msgs10Velocities7getTypeEv  mainpp.o
+    0x08003c3c   0x00000008   Code   RO          610    i._ZN9riki_msgs3Imu6getMD5Ev  mainpp.o
+    0x08003c44   0x00000008   Code   RO          604    i._ZN9riki_msgs3Imu7getTypeEv  mainpp.o
+    0x08003c4c   0x0000004c   Code   RO          232    i._ZN9riki_msgs3PID11deserializeEPh  mainpp.o
+    0x08003c98   0x00000008   Code   RO          442    i._ZN9riki_msgs3PID6getMD5Ev  mainpp.o
+    0x08003ca0   0x00000008   Code   RO          430    i._ZN9riki_msgs3PID7getTypeEv  mainpp.o
+    0x08003ca8   0x0000001c   Code   RO          472    i._ZNK13geometry_msgs5Twist9serializeEPh  mainpp.o
+    0x08003cc4   0x000000ca   Code   RO          238    i._ZNK13geometry_msgs7Vector39serializeEPh  mainpp.o
+    0x08003d8e   0x000000bc   Code   RO          544    i._ZNK14rosserial_msgs20RequestParamResponse9serializeEPh  mainpp.o
+    0x08003e4a   0x00000024   Code   RO          520    i._ZNK14rosserial_msgs3Log9serializeEPh  mainpp.o
+    0x08003e6e   0x00000076   Code   RO          496    i._ZNK14rosserial_msgs9TopicInfo9serializeEPh  mainpp.o
+    0x08003ee4   0x00000032   Code   RO          478    i._ZNK8std_msgs4Time9serializeEPh  mainpp.o
+    0x08003f16   0x0000003a   Code   RO          562    i._ZNK9riki_msgs10Velocities9serializeEPh  mainpp.o
+    0x08003f50   0x00000028   Code   RO          592    i._ZNK9riki_msgs3Imu9serializeEPh  mainpp.o
+    0x08003f78   0x0000003a   Code   RO          586    i._ZNK9riki_msgs3PID9serializeEPh  mainpp.o
+    0x08003fb2   0x00000002   PAD
+    0x08003fb4   0x00000028   Code   RO         4583    i.__0sprintf$4      mc_w.l(printf4.o)
+    0x08003fdc   0x00000020   Code   RO         3356    i.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
+    0x08003ffc   0x0000005c   Code   RO         4731    i.__free$realloc    mc_w.l(mallocr.o)
+    0x08004058   0x00000050   Code   RO         4732    i.__malloc$realloc  mc_w.l(mallocr.o)
+    0x080040a8   0x0000000e   Code   RO         4869    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080040b6   0x00000002   Code   RO         4870    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080040b8   0x0000000e   Code   RO         4871    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080040c6   0x00000002   PAD
+    0x080040c8   0x00000204   Code   RO           95    i.__sti___10_mainpp_cpp_3a322398  mainpp.o
+    0x080042cc   0x0000022c   Code   RO         4588    i._printf_core      mc_w.l(printf4.o)
+    0x080044f8   0x0000000a   Code   RO         4590    i._sputc            mc_w.l(printf4.o)
+    0x08004502   0x00000002   PAD
+    0x08004504   0x00000050   Code   RO         4733    i.internal_alloc    mc_w.l(mallocr.o)
+    0x08004554   0x00000088   Code   RO           96    i.loop              mainpp.o
+    0x080045dc   0x00000078   Code   RO          894    i.main              main.o
+    0x08004654   0x0000006c   Code   RO         4734    i.realloc           mc_w.l(mallocr.o)
+    0x080046c0   0x000000ec   Code   RO           97    i.setup             mainpp.o
+    0x080047ac   0x00000008   Code   RO          400    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE10getMsgTypeEv  mainpp.o
+    0x080047b4   0x00000004   Code   RO          418    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE15getEndpointTypeEv  mainpp.o
+    0x080047b8   0x00000016   Code   RO          388    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE8callbackEPh  mainpp.o
+    0x080047ce   0x00000002   PAD
+    0x080047d0   0x00000008   Code   RO          412    t._ZN3ros10SubscriberIN13geometry_msgs5TwistEE9getMsgMD5Ev  mainpp.o
+    0x080047d8   0x00000008   Code   RO          436    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE10getMsgTypeEv  mainpp.o
+    0x080047e0   0x00000004   Code   RO          454    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE15getEndpointTypeEv  mainpp.o
+    0x080047e4   0x00000016   Code   RO          424    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE8callbackEPh  mainpp.o
+    0x080047fa   0x00000002   PAD
+    0x080047fc   0x00000008   Code   RO          448    t._ZN3ros10SubscriberIN9riki_msgs3PIDEE9getMsgMD5Ev  mainpp.o
+    0x08004804   0x000000bc   Code   RO          289    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15negotiateTopicsEv  mainpp.o
+    0x080048c0   0x00000022   Code   RO          282    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE15requestSyncTimeEv  mainpp.o
+    0x080048e2   0x00000002   PAD
+    0x080048e4   0x0000001c   Code   RO          257    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE3logEcPKc  mainpp.o
+    0x08004900   0x000000ec   Code   RO          375    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgE  mainpp.o
+    0x080049ec   0x00000008   Code   RO          264    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8logerrorEPKc  mainpp.o
+    0x080049f4   0x0000029c   Code   RO          219    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE8spinOnceEv  mainpp.o
+    0x08004c90   0x0000002a   Code   RO          296    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE9advertiseERNS_9PublisherE  mainpp.o
+    0x08004cba   0x00000002   PAD
+    0x08004cbc   0x0000008c   Code   RO          308    t._ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEC1Ev  mainpp.o
+    0x08004d48   0x0000001c   Data   RO          111    .constdata          mainpp.o
+    0x08004d64   0x00000008   Data   RO         3073    .constdata          stm32f4xx_hal_dma.o
+    0x08004d6c   0x00000010   Data   RO         3730    .constdata          system_stm32f4xx.o
+    0x08004d7c   0x00000008   Data   RO         3731    .constdata          system_stm32f4xx.o
+    0x08004d84   0x00000010   Data   RO         3879    .constdata          motor.o
+    0x08004d94   0x00000010   Data   RO         4342    .constdata__ZTV7TwoWire  wire.o
+    0x08004da4   0x00000018   Data   RO          327    .constdata__ZTVN13geometry_msgs5TwistE  mainpp.o
+    0x08004dbc   0x00000018   Data   RO          315    .constdata__ZTVN13geometry_msgs7Vector3E  mainpp.o
+    0x08004dd4   0x00000018   Data   RO          323    .constdata__ZTVN14rosserial_msgs20RequestParamResponseE  mainpp.o
+    0x08004dec   0x00000018   Data   RO          321    .constdata__ZTVN14rosserial_msgs3LogE  mainpp.o
+    0x08004e04   0x00000018   Data   RO          319    .constdata__ZTVN14rosserial_msgs9TopicInfoE  mainpp.o
+    0x08004e1c   0x00000018   Data   RO          335    .constdata__ZTVN3ros10SubscriberIN13geometry_msgs5TwistEEE  mainpp.o
+    0x08004e34   0x00000018   Data   RO          337    .constdata__ZTVN3ros10SubscriberIN9riki_msgs3PIDEEE  mainpp.o
+    0x08004e4c   0x00000014   Data   RO          333    .constdata__ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EEE  mainpp.o
+    0x08004e60   0x00000018   Data   RO          317    .constdata__ZTVN8std_msgs4TimeE  mainpp.o
+    0x08004e78   0x00000018   Data   RO          325    .constdata__ZTVN9riki_msgs10VelocitiesE  mainpp.o
+    0x08004e90   0x00000018   Data   RO          331    .constdata__ZTVN9riki_msgs3ImuE  mainpp.o
+    0x08004ea8   0x00000018   Data   RO          329    .constdata__ZTVN9riki_msgs3PIDE  mainpp.o
+    0x08004ec0   0x00000021   Data   RO          195    .constdata__ZZN13geometry_msgs5Twist6getMD5EvEs  mainpp.o
+    0x08004ee1   0x00000014   Data   RO          194    .constdata__ZZN13geometry_msgs5Twist7getTypeEvEs  mainpp.o
+    0x08004ef5   0x00000021   Data   RO          184    .constdata__ZZN13geometry_msgs7Vector36getMD5EvEs  mainpp.o
+    0x08004f16   0x00000016   Data   RO          183    .constdata__ZZN13geometry_msgs7Vector37getTypeEvEs  mainpp.o
+    0x08004f2c   0x00000021   Data   RO          191    .constdata__ZZN14rosserial_msgs20RequestParamResponse6getMD5EvEs  mainpp.o
+    0x08004f4d   0x00000021   Data   RO          190    .constdata__ZZN14rosserial_msgs3Log6getMD5EvEs  mainpp.o
+    0x08004f6e   0x00000013   Data   RO          189    .constdata__ZZN14rosserial_msgs3Log7getTypeEvEs  mainpp.o
+    0x08004f81   0x00000021   Data   RO          188    .constdata__ZZN14rosserial_msgs9TopicInfo6getMD5EvEs  mainpp.o
+    0x08004fa2   0x00000019   Data   RO          187    .constdata__ZZN14rosserial_msgs9TopicInfo7getTypeEvEs  mainpp.o
+    0x08004fbb   0x00000039   Data   RO          200    .constdata__ZZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi512ELi512EE7publishEiPKNS_3MsgEEs  mainpp.o
+    0x08004ff4   0x00000021   Data   RO          186    .constdata__ZZN8std_msgs4Time6getMD5EvEs  mainpp.o
+    0x08005015   0x0000000e   Data   RO          185    .constdata__ZZN8std_msgs4Time7getTypeEvEs  mainpp.o
+    0x08005023   0x00000021   Data   RO          193    .constdata__ZZN9riki_msgs10Velocities6getMD5EvEs  mainpp.o
+    0x08005044   0x00000015   Data   RO          192    .constdata__ZZN9riki_msgs10Velocities7getTypeEvEs  mainpp.o
+    0x08005059   0x00000021   Data   RO          199    .constdata__ZZN9riki_msgs3Imu6getMD5EvEs  mainpp.o
+    0x0800507a   0x0000000e   Data   RO          198    .constdata__ZZN9riki_msgs3Imu7getTypeEvEs  mainpp.o
+    0x08005088   0x00000021   Data   RO          197    .constdata__ZZN9riki_msgs3PID6getMD5EvEs  mainpp.o
+    0x080050a9   0x0000000e   Data   RO          196    .constdata__ZZN9riki_msgs3PID7getTypeEvEs  mainpp.o
+    0x080050b7   0x00000001   PAD
+    0x080050b8   0x00000020   Data   RO         4867    Region$$Table       anon$$obj.o
+    0x080050d8   0x00000004   Data   RO          113    .init_array         mainpp.o
+    0x080050dc   0x00000000   Data   RO         4750    .init_array         mc_w.l(cpp_init.o)
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000019c8, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000019d0, Max: 0x00020000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3308,17 +3310,18 @@ Memory Map of the image
     0x20000028   0x0000000c   Data   RW         3500    .data               stm32f4xx_hal.o
     0x20000034   0x00000004   Data   RW         3732    .data               system_stm32f4xx.o
     0x20000038   0x00000008   Data   RW         3880    .data               motor.o
-    0x20000040   0x00000004   Data   RW         4824    .data               mc_w.l(mvars.o)
-    0x20000044   0x00000004   Data   RW         4825    .data               mc_w.l(mvars.o)
-    0x20000048   0x00000004   Data   RW         4828    .data               mc_w.l(cpp_dtor.o)
-    0x2000004c   0x00000001   Data   RW          338    .data__ZZN13STM32Hardware5flushEvE5mutex  mainpp.o
-    0x2000004d   0x00000003   PAD
-    0x20000050   0x00001174   Zero   RW          110    .bss                mainpp.o
-    0x200011c4   0x00000100   Zero   RW         1098    .bss                tim.o
-    0x200012c4   0x00000100   Zero   RW         1170    .bss                usart.o
-    0x200013c4   0x00000004   PAD
-    0x200013c8   0x00000200   Zero   RW            2    HEAP                startup_stm32f407xx.o
-    0x200015c8   0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
+    0x20000040   0x00000008   Data   RW         4068    .data               encoder.o
+    0x20000048   0x00000004   Data   RW         4824    .data               mc_w.l(mvars.o)
+    0x2000004c   0x00000004   Data   RW         4825    .data               mc_w.l(mvars.o)
+    0x20000050   0x00000004   Data   RW         4828    .data               mc_w.l(cpp_dtor.o)
+    0x20000054   0x00000001   Data   RW          338    .data__ZZN13STM32Hardware5flushEvE5mutex  mainpp.o
+    0x20000055   0x00000003   PAD
+    0x20000058   0x00001174   Zero   RW          110    .bss                mainpp.o
+    0x200011cc   0x00000100   Zero   RW         1098    .bss                tim.o
+    0x200012cc   0x00000100   Zero   RW         1170    .bss                usart.o
+    0x200013cc   0x00000004   PAD
+    0x200013d0   0x00000200   Zero   RW            2    HEAP                startup_stm32f407xx.o
+    0x200015d0   0x00000400   Zero   RW            1    STACK               startup_stm32f407xx.o
 
 
 ==============================================================================
@@ -3329,7 +3332,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
         60          4          0          0          0        766   dma.o
-       172         14          0          0          0      11452   encoder.o
+       184         20          0          8          0      11719   encoder.o
        108          6          0          0          0        923   gpio.o
        864         38          0          0          0      11928   gy85.o
        392         30          0          0          0       3668   kinematics.o
@@ -3349,14 +3352,14 @@ Image component sizes
       1850         42          0          0          0      12806   stm32f4xx_hal_uart.o
         92         36          0          0          0       6888   stm32f4xx_it.o
         84         18         24          4          0       1159   system_stm32f4xx.o
-       840         70          0          0        256       5161   tim.o
+       840         72          0          0        256       5173   tim.o
         32          4          0          0          0       4035   time.o
        296         30          0          0        256       1872   usart.o
        684         26         16          0          0       8924   wire.o
        236          0          0          0          0       5588   wirebase.o
 
     ----------------------------------------------------------------------
-     16482       1158       1308         68       6520    2135501   Object Totals
+     16494       1166       1308         76       6520    2135780   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         44          0          1          3          4          0   (incl. Padding)
 
@@ -3426,15 +3429,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     19380       1228       1308         80       6520    2117013   Grand Totals
-     19380       1228       1308         80       6520    2117013   ELF Image Totals
-     19380       1228       1308         80          0          0   ROM Totals
+     19392       1236       1308         88       6520    2117292   Grand Totals
+     19392       1236       1308         88       6520    2117292   ELF Image Totals
+     19392       1236       1308         88          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                20688 (  20.20kB)
-    Total RW  Size (RW Data + ZI Data)              6600 (   6.45kB)
-    Total ROM Size (Code + RO Data + RW Data)      20768 (  20.28kB)
+    Total RO  Size (Code + RO Data)                20700 (  20.21kB)
+    Total RW  Size (RW Data + ZI Data)              6608 (   6.45kB)
+    Total ROM Size (Code + RO Data + RW Data)      20788 (  20.30kB)
 
 ==============================================================================
 
